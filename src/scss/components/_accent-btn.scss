@@ -1,0 +1,23 @@
+.accent-btn {
+  padding: 14px 24px;
+  background-color: var(--red-color);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--white-color);
+
+  &:hover {
+    background-color: #D91C21;
+  }
+
+  &:active {
+    background-color: #A11519;
+  }
+
+  &:focus {
+    background-color: #D91C21;
+    border: 2px solid #A11519;
+  }
+}

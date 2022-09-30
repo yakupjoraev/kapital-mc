@@ -5,6 +5,8 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/titles";
+@import "./components/accent-btn";
 @import "./components/header";
 @import "./components/have-questions";
-@import "./components/titles";
+@import "./components/subscribe-health"
