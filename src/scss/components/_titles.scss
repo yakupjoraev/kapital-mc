@@ -1,0 +1,17 @@
+.section-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 100%;
+  color: var(--red-color);
+
+  @include mobile {
+    text-align: center;
+    font-size: 26px;
+    line-height: 135%;
+  }
+
+}
+
+.section-title--blue {
+  color: var(--blue-color);
+}

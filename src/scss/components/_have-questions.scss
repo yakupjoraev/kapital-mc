@@ -1,0 +1,124 @@
+.have-questions {
+  padding: 60px 0 68px 0;
+  background-color: var(--white-color);
+
+  @include mobile {
+    top: 50px 0;
+  }
+
+  // .have-questions__inner
+
+  &__inner {}
+
+  // .have-questions__questions
+
+  &__questions {
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .have-questions__title
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .have-questions__descr
+
+  &__descr {
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--black-color);
+
+    @include mobile {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  // .have-questions__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 65px;
+    column-gap: 20px;
+
+    @include mobile {
+      justify-content: center;
+      column-gap: 0;
+      row-gap: 40px;
+    }
+  }
+
+  // .have-questions__item
+
+  &__item {
+    flex: 0 1 calc(50% - 20px);
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) .have-questions__item-descr {
+      max-width: 240px;
+    }
+
+    &:nth-child(2) .have-questions__item-descr {
+      max-width: 260px;
+    }
+
+    &:nth-child(3) .have-questions__item-descr {
+      max-width: 260px;
+
+      .have-questions__item-link {
+        display: inline-flex;
+      }
+    }
+
+    &:nth-child(4) .have-questions__item-descr {
+      max-width: 290px;
+    }
+
+    @include mobile {
+      flex: 0 1 100%;
+
+      &:nth-child(1) .have-questions__item-descr,
+      &:nth-child(2) .have-questions__item-descr,
+      &:nth-child(3) .have-questions__item-descr,
+      &:nth-child(4) .have-questions__item-descr {
+        max-width: 100%;
+      }
+    }
+  }
+
+  // .have-questions__item-image
+
+  &__item-image {
+    margin-right: 40px;
+  }
+
+  // .have-questions__item-descr
+
+  &__item-descr {
+    font-size: 18px;
+  }
+
+  // .have-questions__item-link
+
+  &__item-link {
+    position: relative;
+    font-size: 18px;
+    color: var(--blue-color);
+
+    &:hover {
+      border-bottom: 1px solid var(--red-color);
+    }
+  }
+}
