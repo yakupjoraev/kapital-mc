@@ -1,6 +1,13 @@
 // @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
 
-// @font-face {
-//   font-family: 'HelveticaNeueCyr';
-//   src: url("../fonts/helveticaneuecyr_thin.otf") format("otf");
-// }
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/helveticaneuecyr-bold") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/helveticaneuecyr-roman") format("ttf");
+  font-weight: 400;
+}
