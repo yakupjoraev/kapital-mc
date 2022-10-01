@@ -1,0 +1,46 @@
+.see-all {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blue-color);
+
+  &:hover {
+    color: #2469BE;
+
+    & .see-all__arrow {
+      margin-left: 15px;
+    }
+  }
+
+  &:active {
+    color: #102E53;
+
+    & .see-all__arrow {
+      margin-left: 15px;
+    }
+  }
+
+  &:focus {
+    color: #2469BE;
+
+    & .see-all__arrow {
+      margin-left: 15px;
+    }
+  }
+
+  &:disabled {
+    color: #E6E6E6;
+
+    & .see-all__arrow {
+      margin-left: 15px;
+    }
+  }
+}
+
+.see-all__arrow {
+  margin-left: 11px;
+  transition: margin-left 0.3s linear;
+}
+
+.see-all__arrow svg path {
+  fill: currentColor;
+}
