@@ -2,9 +2,23 @@
   padding: 60px 0;
   background-color: #F8F8F8;
 
+  @include tablet {
+    padding: 60px 0 45px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0 40px 0;
+  }
+
   // .read-also__inner
 
-  &__inner {}
+  &__inner {
+    position: relative;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
 
   // .read-also__top
 
@@ -21,7 +35,15 @@
 
   // .read-also__link
 
-  &__link {}
+  &__link {
+
+    @include mobile {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
   // .read-also__link-arrow
 
@@ -31,30 +53,59 @@
 
   &__slider {
     position: relative;
+
+    @include mobile {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
   }
 
   // .read-also__slide
 
   &__slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 352px;
     padding: 16px 20px 0 20px;
     border-radius: 16px;
     background-color: var(--white-color);
-    margin: 0 16px;
+
+    @include mobile {
+      width: 318px;
+    }
   }
 
-  & .slick-initialized .slick-slide {
+  & .slick-slide {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-self: flex-end;
-  }
+    justify-content: flex-end;
+    margin: 0 16px;
 
-  & .slick-track {
-    display: flex;
+    @include tablet {
+      margin: 0 12px;
+    }
+
+    @include mobile {
+      margin: 0 5px;
+    }
   }
 
   & .slick-list {
     margin: 0 -16px;
+
+    @include tablet {
+      margin: 0 -12px;
+    }
+
+    @include mobile {
+      margin: 0 -5px;
+    }
+  }
+
+  & .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    display: flex;
   }
 
   // .read-also__slide-top
@@ -87,10 +138,23 @@
 
   &__slide-descr {
     margin-bottom: 16px;
+    font-weight: 700;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: -0.3px;
     color: var(--blue-color);
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
   }
 
   // .read-also__slide-picture
@@ -123,6 +187,10 @@
       background-color: #E6E6E6;
       border-radius: 100%;
     }
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   & .slick-active button {
@@ -147,15 +215,27 @@
     background-size: auto;
     background-position: center center;
     z-index: 2;
+
+    @include small-desktop {
+      top: 95%;
+    }
   }
 
   & .slick-prev {
     left: -70px;
+
+    @include small-desktop {
+      left: 0;
+    }
   }
 
   & .slick-next {
     right: -70px;
     background-image: url('../../img/svg/read-also-arrow-next.svg');
+
+    @include small-desktop {
+      right: 0;
+    }
   }
 }
 
