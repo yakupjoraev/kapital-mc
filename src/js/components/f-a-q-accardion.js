@@ -1,5 +1,5 @@
 // Аккордеон
-function accordion() {
+function faqAccordion() {
   const items = document.querySelectorAll('.accordion-f-a-q__item-trigger')
   items.forEach(item => {
       item.addEventListener('click', () => {
@@ -15,4 +15,4 @@ function accordion() {
       })
   })
 }
-accordion()
+faqAccordion()

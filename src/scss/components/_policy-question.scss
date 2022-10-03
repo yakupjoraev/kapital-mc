@@ -1,0 +1,117 @@
+.policy-question {
+
+  // .policy-question__inner
+
+  &__inner {}
+
+  // .policy-question__select
+
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 736px;
+    width: 100%;
+    padding: 18px 30px;
+    margin-bottom: 40px;
+    background-color: #F0F6FC;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--blue-color);
+    cursor: pointer;
+
+
+    @include mobile {
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+
+    &.policy-question-active~.policy-question__questions {
+      height: auto;
+      opacity: 1;
+      user-select: all;
+      pointer-events: all;
+    }
+
+    &.policy-question-active .policy-question__select-arrow svg path {
+      stroke: #B8181C;
+    }
+
+    &.policy-question-active .policy-question__select-arrow {
+      transform: rotate(0);
+    }
+  }
+
+  // .policy-question__select-text
+
+  &__select-text {
+    @include mobile {
+      font-size: 18px;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 1;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+  }
+
+  // .policy-question__select-arrow
+
+  &__select-arrow {
+    transform: rotate(-180deg);
+  }
+
+  // .policy-question__questions
+
+  &__questions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 25px;
+    height: 0;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: height 0.1s linear 0.2s, opacity 0.1s linear;
+
+    @include tablet {
+      column-gap: 24px;
+    }
+
+  }
+
+  // .policy-question__item
+
+  &__item {
+    flex: 0 1 31%;
+
+    @include tablet {
+      flex: 0 1 47%;
+    }
+
+    @include mobile {
+      flex: 0 1 100%;
+    }
+  }
+
+  // .policy-question__question
+
+  &__question {
+    font-size: 17px;
+    color: var(--black-color);
+
+    &:hover {
+      color: #2469BE;
+    }
+  }
+}
