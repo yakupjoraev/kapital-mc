@@ -55,7 +55,11 @@
     color: var(--white-color);
 
     @include tablet {
-      font-size: 22px;
+      font-size: 18px;
+    }
+
+    @include mobile {
+      font-size: 16px;
     }
   }
 
