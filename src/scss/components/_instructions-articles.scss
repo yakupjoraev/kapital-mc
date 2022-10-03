@@ -114,11 +114,27 @@
     color: var(--black-color);
     background-color: #F0F6FC;
     border-radius: 32px;
+    border: 1px solid transparent;
     background-repeat: no-repeat;
     background-position: 17px center;
 
     @include tablet {
       padding: 10px 18px 10px 45px;
+    }
+
+    &:hover {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+
+    &:active {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+
+    &:focus {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
     }
   }
 
