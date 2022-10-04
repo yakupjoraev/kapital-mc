@@ -1,9 +1,9 @@
 .have-questions {
-  padding: 60px 0 68px 0;
+  margin: 60px 0 68px 0;
   background-color: var(--white-color);
 
   @include mobile {
-    top: 50px 0;
+    margin: 50px 0;
   }
 
   // .have-questions__inner

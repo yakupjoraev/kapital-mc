@@ -1,8 +1,8 @@
 .useful-materials {
-  padding: 60px 0;
+  margin-bottom: 60px;
 
   @include mobile {
-    padding: 40px 0;
+    margin-bottom: 40px;
   }
 
   // .useful-materials__inner

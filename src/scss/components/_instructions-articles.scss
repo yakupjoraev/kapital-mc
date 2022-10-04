@@ -1,13 +1,5 @@
 .instructions-articles {
-  padding: 60px 0 40px 0;
-
-  @include tablet {
-    padding: 50px 0 45px 0;
-  }
-
-  @include mobile {
-    padding: 70px 0 40px 0;
-  }
+  margin-bottom: 40px;
 
   // .instructions-articles__inner
 
@@ -134,6 +126,11 @@
     }
 
     &:focus {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+
+    &.instructions-articles__item-link--active {
       border: 1px solid #A7C8ED;
       color: #2469BE;
     }

@@ -1,4 +1,9 @@
 .policy-question {
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 77px;
+  }
 
   // .policy-question__inner
 

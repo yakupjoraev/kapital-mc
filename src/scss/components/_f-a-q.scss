@@ -107,10 +107,10 @@
 
 .f-a-q {
 
-  padding-top: 60px;
+  margin-bottom: 60px;
 
   @include mobile {
-    padding-top: 77px;
+    margin-bottom: 40px;
   }
 
   // .f-a-q__inner

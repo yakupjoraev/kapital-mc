@@ -1,4 +1,13 @@
 .help-center {
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 70px;
+  }
 
   // .help-center__inner
 
