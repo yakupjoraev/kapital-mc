@@ -1,0 +1,170 @@
+.help-center {
+  padding-top: 40px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
+
+  // .help-center__inner
+
+  &__inner {
+    background-color: #E6F3FF;
+    border-radius: 25px;
+  }
+
+  // .help-center__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+    }
+  }
+
+  // .help-center__info
+
+  &__info {
+    padding-top: 66px;
+    padding-left: 64px;
+    max-width: 445px;
+
+    @include tablet {
+      padding-top: 44px;
+      padding-left: 44px;
+    }
+
+    @include mobile {
+      padding-top: 0;
+      padding-left: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  // .help-center__title
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 12px;
+    }
+  }
+
+  // .help-center__descr
+
+  &__descr {
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: var(--blue-color);
+
+    @include tablet {
+      margin-bottom: 72px;
+    }
+
+    @include mobile {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .help-center__img
+
+  &__img {
+    padding-right: 60px;
+
+    @include tablet {
+      padding-right: 0;
+    }
+  }
+
+  // .help-center__img-bg
+
+  &__img-bg {}
+
+  // .help-center__bottom
+
+  &__bottom {
+    padding: 20px 60px;
+    background-color: #2469BE;
+    border-radius: 0px 0px 25px 25px;
+
+    @include tablet {
+      padding: 20px 40px 30px;
+    }
+
+    @include mobile {
+      padding: 20px 10px;
+    }
+  }
+
+  // .help-center__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    row-gap: 20px;
+
+    @include tablet {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      row-gap: 25px;
+    }
+  }
+
+  // .help-center__item
+
+  &__item {
+    &:not(:last-child) {
+      padding-right: 20px;
+      border-right: 1px solid #A7C8ED;
+    }
+
+    &:not(:first-child) {
+      padding-left: 20px;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        padding-right: 25px;
+      }
+
+      &:not(:first-child) {
+        padding-left: 25px;
+      }
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        padding-right: 0;
+        border-right: none;
+      }
+
+      &:not(:first-child) {
+        padding-left: 0;
+      }
+    }
+
+  }
+
+  // .help-center__item-link
+
+  &__item-link {
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 135%;
+    }
+  }
+}
