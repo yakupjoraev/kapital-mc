@@ -1,0 +1,45 @@
+.breadcrumbs-chapter {
+  padding: 24px 0 40px 0;
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
+
+  // .breadcrumbs-chapter__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  // .breadcrumbs-chapter__item
+
+  &__item {
+    position: relative;
+    font-size: 14px;
+    color: #939393;
+
+    &:not(:last-child) {
+      padding-right: 8px;
+    }
+
+    &:not(:first-child) {
+      padding-left: 8px;
+    }
+
+    &:not(:last-child)::before {
+      content: '/';
+      position: absolute;
+      top: 0;
+      right: -3px;
+      color: #939393;
+    }
+  }
+
+  // .breadcrumbs-chapter__item-link
+
+  &__item-link {
+    font-size: 14px;
+    color: #939393;
+  }
+}

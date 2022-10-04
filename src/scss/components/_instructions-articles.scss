@@ -68,47 +68,48 @@
 
   // .instructions-articles__item
 
-  &__item:nth-child(1) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-check.svg');
+  &__item:nth-child(7) .instructions-articles__item-link img {
+    margin-right: 0;
   }
 
-  &__item:nth-child(2) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-treatment.svg');
-  }
+  // &__item:nth-child(2) .instructions-articles__item-link {
+  //   background-image: url('../../img/instructions-articles/instructions-articles-treatment.svg');
+  // }
 
-  &__item:nth-child(3) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-smile.svg');
-  }
+  // &__item:nth-child(3) .instructions-articles__item-link {
+  //   background-image: url('../../img/instructions-articles/instructions-articles-smile.svg');
+  // }
 
-  &__item:nth-child(4) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-pregnancy.svg');
-  }
+  // &__item:nth-child(4) .instructions-articles__item-link {
+  //   background-image: url('../../img/instructions-articles/instructions-articles-pregnancy.svg');
+  // }
 
-  &__item:nth-child(5) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-document.svg');
-  }
+  // &__item:nth-child(5) .instructions-articles__item-link {
+  //   background-image: url('../../img/instructions-articles/instructions-articles-document.svg');
+  // }
 
-  &__item:nth-child(6) .instructions-articles__item-link {
-    background-image: url('../../img/instructions-articles/instructions-articles-scales.svg');
-  }
+  // &__item:nth-child(6) .instructions-articles__item-link {
+  //   background-image: url('../../img/instructions-articles/instructions-articles-scales.svg');
+  // }
 
-  &__item:nth-child(7) .instructions-articles__item-link {
-    width: 60px;
-    height: 45px;
-    background-image: url('../../img/instructions-articles/instructions-articles-search.svg');
-    background-position: center center;
+  // &__item:nth-child(7) .instructions-articles__item-link {
+  //   width: 60px;
+  //   height: 45px;
+  //   background-image: url('../../img/instructions-articles/instructions-articles-search.svg');
+  //   background-position: center center;
 
-    @include tablet {
-      height: 38px;
-    }
-  }
+  //   @include tablet {
+  //     height: 38px;
+  //   }
+  // }
 
   // .instructions-articles__item-link
 
   &__item-link {
     position: relative;
     display: inline-flex;
-    padding: 13px 20px 13px 48px;
+    align-items: center;
+    padding: 13px 20px 13px 20px;
     font-size: 18px;
     line-height: 18px;
     color: var(--black-color);
@@ -119,7 +120,7 @@
     background-position: 17px center;
 
     @include tablet {
-      padding: 10px 18px 10px 45px;
+      padding: 10px 18px 10px 18px;
     }
 
     &:hover {
@@ -139,7 +140,9 @@
   }
 
 
-  // .instructions-articles__item-search
+  // .instructions-articles__item-image
 
-  &__item-search {}
+  &__item-image {
+    margin-right: 10px;
+  }
 }
