@@ -1,0 +1,26 @@
+.see-more-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  border: 1.5px solid #B8181C;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--red-color);
+
+  &:hover {
+    border: 1.5px solid #D91C21;
+    color: #D91C21;
+  }
+
+  &:active {
+    border: 1.5px solid #A11519;
+    color: #A11519;
+  }
+
+  &:focus {
+    border: 1.5px solid #D91C21;
+    color: #D91C21;
+  }
+}

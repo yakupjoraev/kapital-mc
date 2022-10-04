@@ -92,3 +92,13 @@
     background: linear-gradient(90deg, #1689E8 0%, #4AA4F1 100%);
   }
 }
+
+.real-stories__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+}
