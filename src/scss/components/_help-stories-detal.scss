@@ -288,6 +288,10 @@
       margin-left: 20px;
       padding: 20px;
       font-size: 16px;
+
+      &::after {
+        content: none;
+      }
     }
   }
 }
@@ -351,6 +355,11 @@
       margin-left: 20px;
       padding: 20px;
       font-size: 16px;
+
+
+      &::after {
+        content: none;
+      }
     }
   }
 

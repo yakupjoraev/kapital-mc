@@ -74,10 +74,15 @@
 
       .accordion-f-a-q__item-text {
         margin-bottom: 45px;
-        font-size: 18px;
         color: var(--black-color);
 
+        & p {
+          font-size: 18px;
+          line-height: 135%;
+        }
+
         & p:not(:last-child) {
+
           margin-bottom: 20px;
         }
 
@@ -167,6 +172,7 @@
   &__inner {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 
     @include mobile {
       flex-wrap: wrap;
@@ -179,6 +185,7 @@
   &__text {
     margin-right: 40px;
     font-size: 16px;
+    line-height: 135%;
     color: #4D5759;
 
     @include mobile {
@@ -193,6 +200,7 @@
   // .accordion-f-a-q-form__label
 
   &__label {
+    margin-bottom: 0;
 
     &:hover svg path,
     &:hover .accordion-f-a-q-form__desc {
@@ -219,6 +227,7 @@
 
   &__desc {
     font-size: 16px;
+    line-height: 135%;
     margin-right: 15px;
 
     @include mobile {

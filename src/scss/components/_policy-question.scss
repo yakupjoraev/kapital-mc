@@ -22,9 +22,6 @@
     margin-bottom: 40px;
     background-color: #F0F6FC;
     border-radius: 16px;
-    font-size: 24px;
-    line-height: 33px;
-    color: var(--blue-color);
     cursor: pointer;
 
 
@@ -52,6 +49,10 @@
   // .policy-question__select-text
 
   &__select-text {
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--blue-color);
+
     @include mobile {
       font-size: 18px;
       -ms-text-overflow: ellipsis;
@@ -113,6 +114,7 @@
 
   &__question {
     font-size: 17px;
+    line-height: 135%;
     color: var(--black-color);
 
     &:hover {

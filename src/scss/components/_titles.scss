@@ -13,5 +13,15 @@
 }
 
 .section-title--blue {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 100%;
   color: var(--blue-color);
+
+  @include mobile {
+    text-align: center;
+    font-size: 26px;
+    line-height: 135%;
+  }
+
 }

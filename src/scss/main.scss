@@ -1,27 +1,33 @@
-// базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+  // базовые подключения
+  @import "vars";
+  @import "mixins";
+  @import "fonts";
 
-// подключения компонентов страницы
-@import "./components/titles";
-@import "./components/see-more-btn";
-@import "./components/see-all";
-@import "./components/accent-btn";
-@import "./components/breadcrumbs-chapter";
-@import "./components/header";
-@import "./components/have-questions";
-@import "./components/subscribe-health";
-@import "./components/educational-courses";
-@import "./components/read-also";
-@import "./components/f-a-q";
-@import "./components/useful-materials";
-@import "./components/youtube-content";
-@import "./components/policy-question";
-@import "./components/medical-articles";
-@import "./components/instructions-articles";
-@import "./components/help-center";
-@import "./components/real-stories";
-@import "./components/have-history";
-@import "./components/help-stories-detal";
+
+  main.main {
+    // базовые подключения
+    @import "settings";
+
+    // подключения компонентов страницы
+    @import "./components/titles";
+    @import "./components/see-more-btn";
+    @import "./components/see-all";
+    @import "./components/accent-btn";
+    @import "./components/breadcrumbs-chapter";
+    @import "./components/header";
+    @import "./components/have-questions";
+    @import "./components/subscribe-health";
+    @import "./components/educational-courses";
+    @import "./components/read-also";
+    @import "./components/f-a-q";
+    @import "./components/useful-materials";
+    @import "./components/youtube-content";
+    @import "./components/policy-question";
+    @import "./components/medical-articles";
+    @import "./components/instructions-articles";
+    @import "./components/help-center";
+    @import "./components/real-stories";
+    @import "./components/have-history";
+    @import "./components/help-stories-detal";
+
+  }
