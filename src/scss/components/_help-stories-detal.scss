@@ -1,0 +1,380 @@
+.help-stories-detal {
+  margin-bottom: 60px;
+  color: var(--blue-color);
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  // .help-stories-detal__inner
+
+  &__inner {}
+
+  // .help-stories-detal__top
+
+  &__top {
+    margin-bottom: 20px;
+  }
+
+  // .help-stories-detal__top-link
+
+  &__top-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 20px 13px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--black-color);
+    background-color: #F0F6FC;
+    border-radius: 32px;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    background-position: 17px center;
+
+    @include tablet {
+      padding: 10px 18px 10px 18px;
+    }
+
+    &:hover {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+
+    &:active {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+
+    &:focus {
+      border: 1px solid #A7C8ED;
+      color: #2469BE;
+    }
+  }
+
+  // .help-stories-detal__top-image
+
+  &__top-image {
+    margin-right: 10px;
+  }
+
+  // .help-stories-detal__appeal
+
+  &__appeal {}
+
+  // .help-stories-detal__appeal-title
+
+  &__appeal-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+
+    @include mobile {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  // .help-stories-detal__appeal-body
+
+  &__appeal-body {
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .help-stories-detal__appeal-person
+
+  &__appeal-person {}
+
+  // .help-stories-detal__appeal-specialist
+
+  &__appeal-specialist {}
+
+  // .help-stories-detal__thanks
+
+  &__thanks {}
+
+  // .help-stories-detal__thanks-text
+
+  &__thanks-text {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 135%;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  // .help-stories-detal__thanks-footer
+
+  &__thanks-footer {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    margin-bottom: 60px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      margin-bottom: 50px;
+    }
+  }
+
+  // .help-stories-detal__thanks-img
+
+  &__thanks-img {
+    position: relative;
+    flex: 0 0 450px;
+    padding: 30px 43px;
+    background-color: #F0F6FC;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 70px;
+      height: 70px;
+      background-image: url('../../img/help-stories-detal/help-stories-detal-loupe.svg');
+    }
+
+    &:hover::after {
+      content: '';
+    }
+
+    @include mobile {
+      padding: 20px;
+      flex: 0 0 100%;
+    }
+  }
+
+  // .help-stories-detal__thanks-descr
+
+  &__thanks-descr {
+    flex: 0 1 auto;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 135%;
+
+    @include mobile {
+      margin-bottom: 40px;
+      font-size: 24px;
+    }
+  }
+
+  // .help-stories-detal__thanks-time
+
+  &__thanks-time {
+    font-family: var(--font-family, sans-serif);
+    font-weight: 400;
+    line-height: 135%;
+    font-size: 12px;
+    line-height: 135%;
+    color: #969696;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
+.container {}
+
+.appeal-person {
+  margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  // .appeal-person__inner
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 35px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  // .appeal-person__img
+
+  &__img {
+    flex: 0 0 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    background-color: #F0F6FC;
+    border: 1px solid #D7E6F7;
+    border-radius: 100%;
+
+    img {
+      width: 52px;
+      height: 52px;
+    }
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .appeal-person__left
+
+  &__left {
+    flex: 0 1 auto;
+  }
+
+  // .appeal-person__left-title
+
+  &__left-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .appeal-person__left-descr
+
+  &__left-descr {
+    position: relative;
+    max-width: 785px;
+    padding: 30px;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    font-size: 20px;
+    line-height: 135%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -23px;
+      width: 44px;
+      height: 23px;
+      background-image: url('../../img/help-stories-detal/help-stories-detal-tringle.svg');
+    }
+
+    @include mobile {
+      margin-left: 20px;
+      padding: 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+.appeal-specialist {
+
+  // .appeal-specialist__inner
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    column-gap: 35px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // .appeal-specialist__right
+
+  &__right {
+    flex: 0 1 auto;
+  }
+
+  // .appeal-specialist__right-title
+
+  &__right-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .appeal-specialist__right-descr
+
+  &__right-descr {
+    position: relative;
+    max-width: 785px;
+    padding: 30px;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    font-size: 20px;
+    line-height: 135%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -23px;
+      width: 44px;
+      height: 23px;
+      background-image: url('../../img/help-stories-detal/help-stories-detal-tringle.svg');
+    }
+
+    @include mobile {
+      margin-left: 20px;
+      padding: 20px;
+      font-size: 16px;
+    }
+  }
+
+  // .appeal-specialist__img
+
+  &__img {
+    flex: 0 0 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    background-color: #F0F6FC;
+    border: 1px solid #D7E6F7;
+    border-radius: 100%;
+
+    img {
+      width: 52px;
+      height: 52px;
+    }
+
+    @include mobile {
+      margin-bottom: 15px;
+      margin-left: auto;
+    }
+  }
+}
