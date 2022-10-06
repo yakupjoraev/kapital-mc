@@ -1,0 +1,79 @@
+.useful-materials-page-body {
+  margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 35px;
+  }
+
+  @include mobile {
+    margin-bottom: 140px;
+  }
+}
+
+.useful-materials__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--blue-color);
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 135%;
+  }
+}
+
+.useful-materials-page-body {
+
+  // .useful-materials-page-body__footer
+
+  &__footer {
+    margin-top: 60px;
+
+    @include tablet {
+      margin-top: 50px;
+    }
+
+  }
+
+  // .useful-materials-page-body__btn
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .useful-materials-page-body__btn-link
+
+  &__btn-link {}
+}
+
+.prevention-rehabilitation__list,
+.disease-treatment__list,
+.be-treated-free__list,
+.pregnancy-childbirth__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+.prevention-rehabilitation__item,
+.disease-treatment__item,
+.be-treated-free__item,
+.pregnancy-childbirth__item {
+  margin-bottom: 0;
+}
