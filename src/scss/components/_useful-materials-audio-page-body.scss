@@ -52,28 +52,34 @@
   &__btn-link {}
 }
 
-.prevention-rehabilitation__list,
-.disease-treatment__list,
-.be-treated-free__list,
-.pregnancy-childbirth__list {
+.prevention-rehabilitation-audio,
+.disease-treatment-audio,
+.be-treated-free-audio {
+  margin-bottom: 40px;
+}
+
+
+.prevention-rehabilitation-audio__list,
+.disease-treatment-audio__list,
+.be-treated-free-audio__list,
+.pregnancy-childbirth-audio__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 
   @include tablet {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
   }
 
   @include mobile {
-    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
 }
 
-.prevention-rehabilitation__item,
-.disease-treatment__item,
-.be-treated-free__item,
-.pregnancy-childbirth__item {
+.prevention-rehabilitation-audio__item,
+.disease-treatment-audio__item,
+.be-treated-free-audio__item,
+.pregnancy-childbirth-audio__item {
   margin-bottom: 0;
 }

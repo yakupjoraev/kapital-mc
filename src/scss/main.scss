@@ -10,6 +10,7 @@
 
     // подключения компонентов страницы
     @import "./components/titles";
+    @import "./components/audio-player";
     @import "./components/see-more-btn";
     @import "./components/see-all";
     @import "./components/accent-btn";
@@ -29,6 +30,7 @@
     @import "./components/real-stories";
     @import "./components/have-history";
     @import "./components/help-stories-detal";
-    @import "./components/useful-materials-page-body";
+    @import "./components/useful-materials-video-page-body";
+    @import "./components/useful-materials-audio-page-body";
 
   }
