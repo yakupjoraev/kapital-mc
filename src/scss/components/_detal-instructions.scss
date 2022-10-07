@@ -848,7 +848,9 @@
   fill: #f90;
 }
 
-.star-rating__inner .star-rating__label:hover,
+
+
+.star-rating__inner .star-rating__label:hover svg path,
 .star-rating__inner .star-rating__label:hover~.star-rating__label svg path {
   fill: #f90;
 }
