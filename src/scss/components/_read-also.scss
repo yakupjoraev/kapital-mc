@@ -2,6 +2,10 @@
   padding: 60px 0;
   background-color: #F8F8F8;
 
+  &.see-also {
+    background-color: var(--white-color);
+  }
+
   @include tablet {
     padding: 60px 0 45px 0;
   }
@@ -240,6 +244,10 @@
       right: 0;
     }
   }
+}
+
+.slick-dots li.slick-active {
+  background: var(--blue-color);
 }
 
 .read-also__slide-picture--blue {
