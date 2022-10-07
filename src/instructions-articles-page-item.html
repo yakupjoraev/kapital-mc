@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head-main.html')
+
+<body class="page__body">
+  <div class="site-container allContent">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumbs-chapter">
+        <div class="container">
+          <ul class="breadcrumbs-chapter__list">
+            <li class="breadcrumbs-chapter__item">
+              <a class="breadcrumbs-chapter__item-link" href="">
+                Главная
+              </a>
+            </li>
+
+            <li class="breadcrumbs-chapter__item">
+              <a class="breadcrumbs-chapter__item-link" href="">
+                Справочный центр
+              </a>
+            </li>
+
+            <li class="breadcrumbs-chapter__item">
+              Статьи и инструкции
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      @include('partials/instructions-articles-page-body-item.html')
+      @include('partials/medical-articles-page-body-item.html')
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

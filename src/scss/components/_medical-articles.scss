@@ -128,3 +128,21 @@
     background: linear-gradient(90deg, #1689E8 0%, #4AA4F1 100%);
   }
 }
+
+.medical-articles__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 120px;
+  }
+
+  @include mobile {
+    margin-bottom: 190px;
+  }
+}
+
+.medical-articles__btn-link {}

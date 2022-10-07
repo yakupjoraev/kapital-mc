@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head-main.html')
+
+<body class="page__body">
+  <div class="site-container allContent">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumbs-chapter">
+        <div class="container">
+          <ul class="breadcrumbs-chapter__list">
+            <li class="breadcrumbs-chapter__item">
+              <a class="breadcrumbs-chapter__item-link" href="">
+                Главная
+              </a>
+            </li>
+
+            <li class="breadcrumbs-chapter__item">
+              <a class="breadcrumbs-chapter__item-link" href="">
+                Справочный центр
+              </a>
+            </li>
+
+            <li class="breadcrumbs-chapter__item">
+              <a class="breadcrumbs-chapter__item-link" href="">
+                Статьи и инструкции
+              </a>
+            </li>
+
+            <li class="breadcrumbs-chapter__item">
+              Государство задолжало вам бесплатные лекарства. Как их получить?
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      @include('partials/detal-instructions.html')
+      <!-- @include('partials/medical-articles-page-body.html') -->
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>
