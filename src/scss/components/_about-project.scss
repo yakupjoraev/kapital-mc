@@ -1,0 +1,270 @@
+.about-project {
+  margin-bottom: 80px;
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  // .about-project__inner
+
+  &__inner {}
+
+  // .about-project__title
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .about-project__top
+
+  &__top {
+    display: flex;
+    column-gap: 115px;
+    margin-bottom: 60px;
+    background: linear-gradient(180deg, #E8F9FF 0%, #D8FFF8 100%);
+    border-radius: 16px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 15px;
+      align-items: center;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    @include mobile {
+      padding: 50px 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  // .about-project__texts
+
+  &__texts {
+    max-width: 592px;
+    padding: 65px 0 64px 63px;
+
+    @include tablet {
+      max-width: 544px;
+      padding: 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  // .about-project__text
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--blue-color);
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 17px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  // .about-project__top-img
+
+  &__top-img {}
+
+  // .about-project__top-image
+
+  &__top-image {}
+
+  // .about-project__experts
+
+  &__experts {}
+
+  // .about-project__experts-title
+
+  &__experts-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--blue-color);
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: 26px;
+      line-height: 135%;
+    }
+  }
+
+  // .about-project__experts-list
+
+  &__experts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 0;
+  }
+
+  // .about-project__experts-item
+
+  &__experts-item {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-bottom: 0;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .about-project__experts-img
+
+  &__experts-img {
+    flex: 0 0 160px;
+  }
+
+  // .about-project__experts-image
+
+  &__experts-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+  }
+
+  // .about-project__experts-info
+
+  &__experts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  // .about-project__experts-name
+
+  &__experts-name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--blue-color);
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .about-project__experts-descr
+
+  &__experts-descr {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    color: #4D5759;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .about-project__experts-articles
+
+  &__experts-articles {
+    padding-top: 20px;
+    border-top: 1px solid #E6E6E6;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #193C6D;
+  }
+
+  // .about-project__experts-articles-count
+
+  &__experts-articles-count {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #193C6D;
+  }
+}
+
+.contact-edition {
+
+  // .contact-edition__contact-edition
+
+  &__contact-edition {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  // .contact-edition__contact-edition-title
+
+  &__contact-edition-title {
+    flex: 0 1 100%;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--blue-color);
+
+    @include mobile {
+      margin-bottom: 24px;
+      font-size: 26px;
+      line-height: 135%;
+    }
+  }
+
+  // .contact-edition__contact-edition-image
+
+  &__contact-edition-image {
+    margin-right: 30px;
+    width: 30px;
+    height: 24px;
+
+    @include tablet {
+      margin-right: 25px;
+    }
+
+    @include mobile {
+      margin-right: 14px;
+      width: 22px;
+      height: 18px;
+    }
+  }
+
+  // .contact-edition__contact-edition-link
+
+  &__contact-edition-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135%;
+    color: #2469BE;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

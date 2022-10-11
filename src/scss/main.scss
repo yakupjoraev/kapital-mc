@@ -3,7 +3,6 @@
   @import "mixins";
   @import "fonts";
 
-
   main.main {
     // базовые подключения
     @import "settings";
@@ -37,5 +36,8 @@
     @import "./components/questions-answers";
     @import "./components/tell-story";
     @import "./components/about-project";
+  }
 
+  .site-container.allContent>footer {
+    margin-top: 0;
   }
