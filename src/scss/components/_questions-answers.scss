@@ -151,6 +151,10 @@
     font-size: 29px;
     line-height: 135%;
     color: var(--blue-color);
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   // .questions-answers__list
@@ -267,4 +271,46 @@
       font-size: 16px;
     }
   }
+
+  .questions-answers__item-new {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #4D5759;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      background-color: #EB8D00;
+    }
+
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
 }
+
+.questions-answers__more {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}
+
+.questions-answers__more-link {}

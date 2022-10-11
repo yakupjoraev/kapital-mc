@@ -32,8 +32,10 @@
 
 
     .accordion-f-a-q__item-trigger {
+      position: relative;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      flex-direction: column;
       padding-right: 20px;
       cursor: pointer;
 
@@ -43,12 +45,11 @@
       }
 
       .trigger__img {
-        position: relative;
         margin-left: auto;
 
         .trigger__arrow {
           position: absolute;
-          right: -20px;
+          right: 0;
           bottom: 50%;
           width: 15px;
           height: 8px;
@@ -60,8 +61,8 @@
 
     &.accordion-f-a-q__item-active {
       & .accordion-f-a-q__item-trigger .trigger__arrow {
-        background-image: url('../../img/svg/f-a-q-close-mobile.svg');
-        transform: rotate(0);
+        // background-image: url('../../img/svg/f-a-q-close-mobile.svg');
+        transform: rotate(180deg);
         height: 14px;
       }
     }
@@ -201,6 +202,7 @@
 
   &__label {
     margin-bottom: 0;
+    cursor: pointer;
 
     &:hover svg path,
     &:hover .accordion-f-a-q-form__desc {
@@ -266,5 +268,43 @@
       margin-right: auto;
 
     }
+
+    &:hover {
+      color: #2469BE;
+      border: 1px solid #2469BE;
+    }
   }
 }
+
+.accordion-f-a-q__item-see {
+  position: relative;
+  display: inline-flex;
+  margin-top: -25px;
+  margin-bottom: 45px;
+  cursor: pointer;
+
+  @include mobile {
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-image: url('../../img/youtube-content/youtube-content-img-play.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:hover::after {
+    content: '';
+  }
+}
+
+.accordion-f-a-q__item-see-image {}

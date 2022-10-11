@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="_001" data-name="001" transform="translate(-24 -24)">
+    <circle id="Эллипс_7" data-name="Эллипс 7" cx="40" cy="40" r="40" transform="translate(24 24)" fill="#fff"/>
+    <path id="Icon_metro-info" data-name="Icon metro-info" d="M18.321,12.616a1.692,1.692,0,0,1,1.688-1.687h1.125a1.692,1.692,0,0,1,1.688,1.688v1.125a1.692,1.692,0,0,1-1.687,1.688H20.008a1.692,1.692,0,0,1-1.688-1.687Zm6.75,16.313h-9v-2.25h2.25v-6.75h-2.25v-2.25h6.75v9h2.25Zm-4.5-27a18,18,0,1,0,18,18,18,18,0,0,0-18-18Zm0,32.625A14.625,14.625,0,1,1,35.2,19.928,14.625,14.625,0,0,1,20.571,34.553Z" transform="translate(43.325 44.072)" fill="#153d6e"/>
+  </g>
+</svg>

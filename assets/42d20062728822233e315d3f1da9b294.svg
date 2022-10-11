@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_698" data-name="Прямоугольник 698" width="40" height="40" transform="translate(440 10061)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon-rss" transform="translate(-440 -10061)" clip-path="url(#clip-path)">
+    <g id="yandex" transform="translate(440 10061)">
+      <circle id="Эллипс_226" data-name="Эллипс 226" cx="20" cy="20" r="20" fill="#b8181c"/>
+      <path id="Icon_awesome-rss" data-name="Icon awesome-rss" d="M5.013,17.279a2.507,2.507,0,1,1-2.507-2.507A2.507,2.507,0,0,1,5.013,17.279Zm6.875,1.849A11.9,11.9,0,0,0,.657,7.9.626.626,0,0,0,0,8.522V10.4a.627.627,0,0,0,.583.627A8.77,8.77,0,0,1,8.754,19.2a.627.627,0,0,0,.627.583h1.881a.626.626,0,0,0,.626-.657Zm5.646.011A17.547,17.547,0,0,0,.646,2.25.626.626,0,0,0,0,2.877V4.758a.628.628,0,0,0,.6.626,14.406,14.406,0,0,1,13.8,13.8.628.628,0,0,0,.626.6h1.881A.626.626,0,0,0,17.535,19.139Z" transform="translate(13.879 7.121)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
