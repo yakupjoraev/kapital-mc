@@ -110,8 +110,7 @@
             </nav>
             <nav class="mobile">
               <ul>
-                <a class="search" href="http://dev.kapmed.ru/#" onclick="switchSearch()"><i
-                    class="ri-search-line"></i></a>
+                <a class="search" href="#" data-search><i class="ri-search-line"></i></a>
                 <li><a class="burger" href="http://dev.kapmed.ru/#"><i class="ri-menu-line"></i><i
                       class="ri-close-fill"></i></a></li>
                 <a class="mobile_omc_top btn btn-red" href="http://dev.kapmed.ru/zayavka/">
@@ -130,7 +129,7 @@
       </div>
     </div>
     <div class="search-wrapper">
-      <div class="cross" onclick="switchSearch()">×</div>
+      <div class="cross" data-search>×</div>
       <div class="container">
         <div id="comp_843ec2f7e16be9aed9abff845e38b01c">
           <div class="row">
@@ -161,8 +160,12 @@
                   Полис ОМС <span style="float: right">
                   </span>
                 </div>
+
+                <!-- Школа пациента удалил, добавил Справочный центр -->
                 <div style="cursor: pointer" data-value="iblock_school" class="search__where item ">
-                  Школа пациента <span style="float: right">
+                  <img loading="lazy" src="img/svg/search__where-new-block.svg" width="20" height="20"
+                    alt="Справочный центр">
+                  Справочный центр <span style="float: right">
                   </span>
                 </div>
                 <div style="cursor: pointer" data-value="iblock_science" class="search__where item ">
@@ -199,7 +202,7 @@
                     <option value="iblock_about">О компании</option>
                     <option value="iblock_press">Пресс-центр</option>
                     <option value="iblock_policy">Полис ОМС</option>
-                    <option value="iblock_school">Школа пациента</option>
+                    <option value="iblock_school">Справочный центр</option>
                     <option value="iblock_science">Научно-практическая деятельность</option>
                     <option value="iblock_dispanser">Диспансеризация</option>
                     <option value="iblock_protection">Защита прав</option>
@@ -217,1057 +220,1350 @@
                 </p>
               </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container fromHeaderMenu" style="min-height: auto; height: auto;">
-
-    <ul class="headerMenu desktop">
-      <li class="logo2"><a href="http://dev.kapmed.ru/"><img src="./assets/logo2.svg"></a></li>
-      <li><a href="javascript:;"><span>Полис ОМС</span></a>
-        <div class="submenu">
-          <div class="container">
-            <div class="close">
-              <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
-                  src="./assets/close_button2-red.svg">
+              <div class="row row-responsive">
+                <!-- <div class="column column-md-100 column-sm-100 column-xs-100">
+                  <div class="search_block custom_search_block"
+                    onclick="
+                                    window.location.href=&#39;/policy/registration/&#39;;
+                                    ym(45123882,&#39;reachGoal&#39;,&#39;polisFromSearchBar&#39;)                                    ">
+                    <div class="row row-responsive height-responsive">
+                      <div style="padding-top:27px!important; text-align: center;"
+                        class="column column-md-20 column-sm-20 column-xs-100">
+                        <img src="./Права и обязанности застрахованных лиц_files/nb46jydxqos070r8ry55xj9hupghqs5p.svg">
+                      </div>
+                      <div style="padding-top:27px!important; text-align: center;"
+                        class="column column-md-60 column-sm-60 column-xs-100">
+                        <div class="block_theme">
+                          <span>Оформление полиса</span>
+                        </div>
+                        <div class="block_text">
+                          <span>Узнайте как оформить полис легко и быстро</span>
+                        </div>
+                      </div>
+                      <div class="column column-md-20 column-sm-20 column-xs-20 search-triangle">
+                        <div class="search-triangle">→</div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
               </div>
-            </div>
-            <ul>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/how/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Как выбрать страховую компанию</p>
-                      <p class="desc">Выбор и условия замены СМО</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/points/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Пункты выдачи</p>
-                      <p class="desc">Перечень ближайших отделений и карта</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-polisa-novorozhdennomu/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Полис ОМС ребенку</p>
-                      <p class="desc">Порядок и необходимые документы</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-familii/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Полис при смене фамилии</p>
-                      <p class="desc">Переоформление</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/zayavka/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Онлайн заявка на оформление</p>
-                      <p class="desc">Заполните онлайн-заявку, для быстрого получения</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/delivery/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Доставка полиса</p>
-                      <p class="desc">Маломобильным гражданам и в офис (от 5 документов)</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-polisa-po-doverennosti/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Оформление полиса через представителя</p>
-                      <p class="desc">Если вы не можете оформить лично</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a
-                  href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-mesta-zhitelstva/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">При смене места жительства</p>
-                      <p class="desc">Переоформление документа</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/registration/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Порядок оформления ОМС</p>
-                      <p class="desc">Пошаговая инструкция</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/entity/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Юридическим лицам</p>
-                      <p class="desc">Выездные семинары для сотрудников</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a
-                  href="http://dev.kapmed.ru/policy/oformlenie-polisa-v-sluchae-porchi-ili-uteri/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Повреждение или утеря полиса</p>
-                      <p class="desc">Выдача дубликата</p>
-                    </div>
-                  </div>
-                </a></li>
 
-              <li class="menu-item standart">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/c16/c16aa8963fd6d36e2b6aaf4fd2e3c24e.pdf">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Нововведения в период COVID-19</p>
-                      <p class="desc"></p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/docs/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Перечень документов</p>
-                      <p class="desc">Что нужно для оформления</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-elektronnogo-polisa/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Электронный полис ОМС</p>
-                      <p class="desc">В виде пластиковой карты с чипом</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/ef5/ebeqijz25pjjhgnhq7m9kquvj9693am0.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Форма заявления о выборе (замене) страховой медицинской
-                        организации</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 176.64 КБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/312/312f1e02ee8855a0e13857a0e40106e2.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Форма доверенности (передоверие полномочий от одного
-                        лица другому)</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 61.11 КБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li><a href="http://dev.kapmed.ru/#"><span>Профилактика</span></a>
-        <div class="submenu">
-          <div class="container">
-            <div class="close">
-              <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
-                  src="./assets/close_button2-red.svg">
+              <div class="total">
+                <!-- <p>По запросу "Оформить полис" найдено 112 ответов</p> -->
               </div>
-            </div>
-            <ul>
-              <li class="menu-item tablet menu_dispancer_banner_container">
-                <a href="http://dev.kapmed.ru/dispanser/medical_examination/">
-                </a>
-              </li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Диспансеризация взрослых</p>
-                      <div class="wr">
-                        <p class="desc">Здоровье под контролем!</p>
+
+              <div class="results">
+                <div class="result">
+                  <div class="medical-articles__inner">
+                    <article class="medical-article">
+                      <div class="medical-article__top">
+                        <p class="medical-article__top-text">
+                          Профилактика и реабилитация
+                        </p>
+
+                        <time class="medical-article__top-time">
+                          24.02.2022
+                        </time>
                       </div>
-                    </div>
+
+                      <p class="medical-article__descr">
+                        Углубленная диспансеризация лиц после COVID-19
+                      </p>
+
+                      <div class="medical-article__img medical-article__img--lite-green">
+                        <img loading="lazy" src="img/medical-articles/medical-articles-1.svg"
+                          alt="Углубленная диспансеризация лиц после COVID-19">
+                      </div>
+                    </article>
+
+                    <article class="medical-article">
+                      <div class="medical-article__top">
+                        <p class="medical-article__top-text">
+                          Профилактика и реабилитация
+                        </p>
+
+                        <time class="medical-article__top-time">
+                          24.02.2022
+                        </time>
+                      </div>
+
+                      <p class="medical-article__descr">
+                        Цифровой полис ОМС.
+                        Как это будет? Мнение эксперта.
+                      </p>
+
+                      <div class="medical-article__img medical-article__img--lite-blue">
+                        <img loading="lazy" src="img/medical-articles/medical-articles-2.svg" alt="Цифровой полис ОМС.
+                          Как это будет? Мнение эксперта.">
+                      </div>
+                    </article>
                   </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/profilakticheskiy-osmotr/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Профилактический осмотр </p>
-                      <div class="wr">
-                        <p class="desc">Можно проходить ежегодно</p>
+
+                  <div class="result">
+                    <!-- Accordion -->
+                    <div class="f-a-q__accordion accordion-f-a-q">
+                      <div class="accordion-f-a-q__item">
+                        <div class="accordion-f-a-q__item-trigger">
+                          <div class="trigger__text">Где я могу больше узнать о своём заболевании?</div>
+                          <div class="trigger__img">
+                            <span class="trigger__arrow"></span>
+                          </div>
+                        </div>
+                        <div class="accordion-f-a-q__item-content">
+                          <time class="accordion-f-a-q__item-time">Обновлено: 18.09.2020</time>
+                          <div class="accordion-f-a-q__item-text">
+                            <p> Большой список необходимых процедур диагностике часто выглядит для
+                              человека, далёкого от медицины, как прихоть врачей и необходимость «развести» пациента на
+                              большие траты.
+                              Если вы чувствуете подвох, прямо задавайте вопрос.В случае если врач действует в интересах
+                              пациента, он
+                              подробно объяснит, зачем был назначен каждый анализ и УЗИ.А вот если вместо чёткого ответа
+                              пойдут
+                              обтекаемые фразы, есть смысл задуматься о смене врача или медицинского центра.</p>
+                            <p> Пациентам важно понимать, что врачи имеют дело с очень сложной системой – человеческим
+                              организмом.
+                              Поэтому
+                              (особенно в сложных случаях) доктор старается перестраховаться и наверняка убедиться, что
+                              программа
+                              леченияи диагноз определены верно.</p>
+                          </div>
+                          <div class="accordion-f-a-q__item__form accordion-f-a-q-form">
+                            <form class="accordion-f-a-q-form__inner">
+                              <p class="accordion-f-a-q-form__text">
+                                Отзыв был полезен?
+                              </p>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-like1">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-like1">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-like">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M13.1749 4.61051H10.14L10.6383 3.11454C10.7769 2.69968 10.7813 2.25171 10.6508 1.8342C10.5203 1.41668 10.2616 1.05094 9.91141 0.788883L9.25204 0.294569C8.95404 0.0715771 8.5727 -0.00788856 8.21041 0.0774914C7.84824 0.162871 7.54244 0.404291 7.37547 0.736863L6.77716 1.93341C6.1123 3.25795 5.18864 4.43563 4.06064 5.39683C3.7361 4.95666 3.24021 4.67452 2.6959 4.62038C2.1517 4.56614 1.60996 4.74515 1.20504 5.11278C0.800127 5.48052 0.569899 6.00252 0.571442 6.54938V12.0185C0.570549 12.5724 0.806822 13.1001 1.22067 13.4683C1.6345 13.8365 2.18618 14.0097 2.73618 13.9443C3.28618 13.8788 3.78184 13.5809 4.09778 13.1259L5.20001 13.8619C5.29376 13.9244 5.40392 13.9578 5.51653 13.9579H11.5165C11.9597 13.9597 12.393 13.8278 12.76 13.5794C13.127 13.3311 13.4105 12.9779 13.5737 12.5659L15.2308 8.42307C15.3364 8.1618 15.3903 7.88256 15.3897 7.60076V6.82365C15.3891 6.23659 15.1555 5.67376 14.7402 5.25879C14.3249 4.84385 13.762 4.61067 13.1749 4.61047L13.1749 4.61051ZM3.30628 12.0185C3.30628 12.3029 3.15461 12.5656 2.90828 12.7078C2.66208 12.8501 2.35863 12.8501 2.11231 12.7078C1.866 12.5656 1.71431 12.3029 1.71431 12.0185V6.54937C1.71431 6.26499 1.86599 6.00228 2.11231 5.86008C2.35863 5.71789 2.66208 5.71789 2.90828 5.86008C3.1546 6.00227 3.30628 6.265 3.30628 6.54937V12.0185ZM14.2451 7.6008C14.2457 7.73785 14.2197 7.87368 14.1686 8.0008L12.5143 12.1431C12.4353 12.3422 12.2983 12.5128 12.1209 12.6329C11.9436 12.7531 11.7342 12.8169 11.52 12.8162H5.69146L4.44918 11.9876V6.55049C5.85298 5.44323 6.99661 4.04157 7.79946 2.4442L8.40004 1.24823C8.41533 1.21865 8.44278 1.19722 8.47515 1.18952C8.50751 1.18193 8.54166 1.18874 8.56856 1.20827L9.22793 1.70259L9.22804 1.70248C9.38619 1.82111 9.50305 1.98652 9.56199 2.17525C9.62093 2.36398 9.61902 2.56642 9.55663 2.75393L8.80517 5.00025C8.74714 5.17447 8.77638 5.36588 8.88363 5.51488C8.991 5.66376 9.16332 5.75215 9.34692 5.75226H13.1755C13.4592 5.7526 13.7313 5.86543 13.932 6.06609C14.1326 6.26676 14.2455 6.53875 14.2458 6.82258L14.2451 7.6008Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Да
+                                </p>
+                              </label>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-dislike1">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-dislike1">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-dislike">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M2.82515 9.38998L5.86 9.38998L5.36169 10.8859C5.22307 11.3008 5.21872 11.7488 5.34919 12.1663C5.47966 12.5838 5.73836 12.9495 6.08859 13.2116L6.74796 13.7059C7.04596 13.9289 7.4273 14.0084 7.78959 13.923C8.15176 13.8376 8.45756 13.5962 8.62453 13.2636L9.22284 12.0671C9.8877 10.7425 10.8114 9.56485 11.9394 8.60365C12.2639 9.04382 12.7598 9.32597 13.3041 9.38011C13.8483 9.43435 14.39 9.25533 14.795 8.88771C15.1999 8.51997 15.4301 7.99797 15.4286 7.45111L15.4286 1.98197C15.4295 1.42805 15.1932 0.900397 14.7793 0.532197C14.3655 0.163997 13.8138 -0.0092031 13.2638 0.056197C12.7138 0.121711 12.2182 0.419596 11.9022 0.874625L10.8 0.138568C10.7062 0.0760675 10.5961 0.0426965 10.4835 0.0425859L4.48347 0.0425854C4.04027 0.0407991 3.60702 0.172718 3.24004 0.421041C2.87296 0.669367 2.58947 1.02261 2.42633 1.43455L0.769188 5.57741C0.663608 5.83868 0.609703 6.11793 0.61026 6.39973L0.61026 7.17684C0.610929 7.7639 0.844522 8.32673 1.2598 8.7417C1.67509 9.15664 2.23803 9.38981 2.82509 9.39001L2.82515 9.38998ZM12.6937 1.98198C12.6937 1.6976 12.8454 1.43489 13.0917 1.29269C13.3379 1.15039 13.6414 1.15039 13.8877 1.29269C14.134 1.43488 14.2857 1.69761 14.2857 1.98198L14.2857 7.45112C14.2857 7.73549 14.134 7.99821 13.8877 8.14041C13.6414 8.28259 13.3379 8.28259 13.0917 8.1404C12.8454 7.99822 12.6937 7.73549 12.6937 7.45112L12.6937 1.98198ZM1.75486 6.39969C1.7543 6.26264 1.7803 6.12681 1.83142 5.99969L3.48565 1.8574C3.56467 1.6583 3.70172 1.48766 3.87908 1.36755C4.05644 1.24743 4.26579 1.18362 4.47997 1.18429L10.3085 1.18429L11.5508 2.01286L11.5508 7.45C10.147 8.55726 9.00339 9.95892 8.20054 11.5563L7.59996 12.7523C7.58467 12.7818 7.55722 12.8033 7.52485 12.811C7.49249 12.8186 7.45834 12.8117 7.43144 12.7922L6.77207 12.2979L6.77196 12.298C6.61381 12.1794 6.49696 12.014 6.43801 11.8252C6.37907 11.6365 6.38098 11.4341 6.44337 11.2466L7.19483 9.00024C7.25286 8.82602 7.22362 8.63461 7.11637 8.48561C7.009 8.33673 6.83668 8.24833 6.65308 8.24822L2.82451 8.24822C2.5408 8.24789 2.26871 8.13505 2.06803 7.93439C1.86736 7.73373 1.75451 7.46174 1.7542 7.17791L1.75486 6.39969Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Нет
+                                </p>
+                              </label>
+
+                              <a class="accordion-f-a-q-form__link" href="#">Скачать в PDF</a>
+                            </form>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/detey/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Диспансеризация детей</p>
-                      <div class="wr">
-                        <p class="desc">Ранее выявление заболеваний</p>
+
+                      <div class="accordion-f-a-q__item">
+                        <div class="accordion-f-a-q__item-trigger">
+                          <div class="trigger__text">Есть ли в назначенных обследованиях те, которые не повлияют на
+                            тактику лечения?
+                          </div>
+                          <div class="trigger__img">
+                            <span class="trigger__arrow"></span>
+                          </div>
+                        </div>
+                        <div class="accordion-f-a-q__item-content">
+                          <time class="accordion-f-a-q__item-time">Обновлено: 18.09.2020</time>
+                          <div class="accordion-f-a-q__item-text">
+                            <p> Большой список необходимых процедур диагностике часто выглядит для
+                              человека, далёкого от медицины, как прихоть врачей и необходимость «развести» пациента на
+                              большие траты.
+                              Если вы чувствуете подвох, прямо задавайте вопрос.В случае если врач действует в интересах
+                              пациента, он
+                              подробно объяснит, зачем был назначен каждый анализ и УЗИ.А вот если вместо чёткого ответа
+                              пойдут
+                              обтекаемые фразы, есть смысл задуматься о смене врача или медицинского центра.</p>
+                            <p> Пациентам важно понимать, что врачи имеют дело с очень сложной системой – человеческим
+                              организмом.
+                              Поэтому
+                              (особенно в сложных случаях) доктор старается перестраховаться и наверняка убедиться, что
+                              программа
+                              леченияи диагноз определены верно.</p>
+                          </div>
+                          <div class="accordion-f-a-q__item__form accordion-f-a-q-form">
+                            <form class="accordion-f-a-q-form__inner">
+                              <p class="accordion-f-a-q-form__text">
+                                Отзыв был полезен?
+                              </p>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-like2">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-like2">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-like">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M13.1749 4.61051H10.14L10.6383 3.11454C10.7769 2.69968 10.7813 2.25171 10.6508 1.8342C10.5203 1.41668 10.2616 1.05094 9.91141 0.788883L9.25204 0.294569C8.95404 0.0715771 8.5727 -0.00788856 8.21041 0.0774914C7.84824 0.162871 7.54244 0.404291 7.37547 0.736863L6.77716 1.93341C6.1123 3.25795 5.18864 4.43563 4.06064 5.39683C3.7361 4.95666 3.24021 4.67452 2.6959 4.62038C2.1517 4.56614 1.60996 4.74515 1.20504 5.11278C0.800127 5.48052 0.569899 6.00252 0.571442 6.54938V12.0185C0.570549 12.5724 0.806822 13.1001 1.22067 13.4683C1.6345 13.8365 2.18618 14.0097 2.73618 13.9443C3.28618 13.8788 3.78184 13.5809 4.09778 13.1259L5.20001 13.8619C5.29376 13.9244 5.40392 13.9578 5.51653 13.9579H11.5165C11.9597 13.9597 12.393 13.8278 12.76 13.5794C13.127 13.3311 13.4105 12.9779 13.5737 12.5659L15.2308 8.42307C15.3364 8.1618 15.3903 7.88256 15.3897 7.60076V6.82365C15.3891 6.23659 15.1555 5.67376 14.7402 5.25879C14.3249 4.84385 13.762 4.61067 13.1749 4.61047L13.1749 4.61051ZM3.30628 12.0185C3.30628 12.3029 3.15461 12.5656 2.90828 12.7078C2.66208 12.8501 2.35863 12.8501 2.11231 12.7078C1.866 12.5656 1.71431 12.3029 1.71431 12.0185V6.54937C1.71431 6.26499 1.86599 6.00228 2.11231 5.86008C2.35863 5.71789 2.66208 5.71789 2.90828 5.86008C3.1546 6.00227 3.30628 6.265 3.30628 6.54937V12.0185ZM14.2451 7.6008C14.2457 7.73785 14.2197 7.87368 14.1686 8.0008L12.5143 12.1431C12.4353 12.3422 12.2983 12.5128 12.1209 12.6329C11.9436 12.7531 11.7342 12.8169 11.52 12.8162H5.69146L4.44918 11.9876V6.55049C5.85298 5.44323 6.99661 4.04157 7.79946 2.4442L8.40004 1.24823C8.41533 1.21865 8.44278 1.19722 8.47515 1.18952C8.50751 1.18193 8.54166 1.18874 8.56856 1.20827L9.22793 1.70259L9.22804 1.70248C9.38619 1.82111 9.50305 1.98652 9.56199 2.17525C9.62093 2.36398 9.61902 2.56642 9.55663 2.75393L8.80517 5.00025C8.74714 5.17447 8.77638 5.36588 8.88363 5.51488C8.991 5.66376 9.16332 5.75215 9.34692 5.75226H13.1755C13.4592 5.7526 13.7313 5.86543 13.932 6.06609C14.1326 6.26676 14.2455 6.53875 14.2458 6.82258L14.2451 7.6008Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Да
+                                </p>
+                              </label>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-dislike2">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-dislike2">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-dislike">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M2.82515 9.38998L5.86 9.38998L5.36169 10.8859C5.22307 11.3008 5.21872 11.7488 5.34919 12.1663C5.47966 12.5838 5.73836 12.9495 6.08859 13.2116L6.74796 13.7059C7.04596 13.9289 7.4273 14.0084 7.78959 13.923C8.15176 13.8376 8.45756 13.5962 8.62453 13.2636L9.22284 12.0671C9.8877 10.7425 10.8114 9.56485 11.9394 8.60365C12.2639 9.04382 12.7598 9.32597 13.3041 9.38011C13.8483 9.43435 14.39 9.25533 14.795 8.88771C15.1999 8.51997 15.4301 7.99797 15.4286 7.45111L15.4286 1.98197C15.4295 1.42805 15.1932 0.900397 14.7793 0.532197C14.3655 0.163997 13.8138 -0.0092031 13.2638 0.056197C12.7138 0.121711 12.2182 0.419596 11.9022 0.874625L10.8 0.138568C10.7062 0.0760675 10.5961 0.0426965 10.4835 0.0425859L4.48347 0.0425854C4.04027 0.0407991 3.60702 0.172718 3.24004 0.421041C2.87296 0.669367 2.58947 1.02261 2.42633 1.43455L0.769188 5.57741C0.663608 5.83868 0.609703 6.11793 0.61026 6.39973L0.61026 7.17684C0.610929 7.7639 0.844522 8.32673 1.2598 8.7417C1.67509 9.15664 2.23803 9.38981 2.82509 9.39001L2.82515 9.38998ZM12.6937 1.98198C12.6937 1.6976 12.8454 1.43489 13.0917 1.29269C13.3379 1.15039 13.6414 1.15039 13.8877 1.29269C14.134 1.43488 14.2857 1.69761 14.2857 1.98198L14.2857 7.45112C14.2857 7.73549 14.134 7.99821 13.8877 8.14041C13.6414 8.28259 13.3379 8.28259 13.0917 8.1404C12.8454 7.99822 12.6937 7.73549 12.6937 7.45112L12.6937 1.98198ZM1.75486 6.39969C1.7543 6.26264 1.7803 6.12681 1.83142 5.99969L3.48565 1.8574C3.56467 1.6583 3.70172 1.48766 3.87908 1.36755C4.05644 1.24743 4.26579 1.18362 4.47997 1.18429L10.3085 1.18429L11.5508 2.01286L11.5508 7.45C10.147 8.55726 9.00339 9.95892 8.20054 11.5563L7.59996 12.7523C7.58467 12.7818 7.55722 12.8033 7.52485 12.811C7.49249 12.8186 7.45834 12.8117 7.43144 12.7922L6.77207 12.2979L6.77196 12.298C6.61381 12.1794 6.49696 12.014 6.43801 11.8252C6.37907 11.6365 6.38098 11.4341 6.44337 11.2466L7.19483 9.00024C7.25286 8.82602 7.22362 8.63461 7.11637 8.48561C7.009 8.33673 6.83668 8.24833 6.65308 8.24822L2.82451 8.24822C2.5408 8.24789 2.26871 8.13505 2.06803 7.93439C1.86736 7.73373 1.75451 7.46174 1.7542 7.17791L1.75486 6.39969Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Нет
+                                </p>
+                              </label>
+
+                              <a class="accordion-f-a-q-form__link" href="#">Скачать в PDF</a>
+                            </form>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/about_vaccination/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Вакцинация от COVID–19</p>
-                      <div class="wr">
-                        <p class="desc">Безопасный и эффективный способ защиты</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart">
-                <a href="http://dev.kapmed.ru/dispanser/medical_examination/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Диспансеризация лиц, переболевших COVID-19</p>
-                      <div class="wr">
-                        <p class="desc">Выявление постковидного синдрома и других
-                          последствий инфекции</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item empty"><a>
-                  <div class="data">
-                    <div class="info data-empty">
-                      <p class="title"></p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item empty"><a>
-                  <div class="data">
-                    <div class="info data-empty">
-                      <p class="title"></p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item empty"><a>
-                  <div class="data">
-                    <div class="info data-empty">
-                      <p class="title"></p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <!--                    <li class="menu-item standart">-->
-              <!--                        <a href="/dispanser/medical_examination/">-->
-              <!--                            <div class="data">-->
-              <!--                                <div class="info data-standart">-->
-              <!--                                    <p class="title">Углубленная диспансеризация по ОМС</p>-->
-              <!--                                    <div class="wr">-->
-              <!--                                        <p class="desc">Расширенная программа диспансеризации</p>-->
-              <!--                                    </div>-->
-              <!--                                </div>-->
-              <!--                            </div>-->
-              <!--                        </a>-->
-              <!--                    </li>-->
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/49a/i54k7aomndz5985ynjnyjdgid6kzuyub.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Порядок проведения профмероприятий взрослого
-                        населения</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 878.86 КБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/ac7/d6xtw9rxp1evap1954gqg55soajd9nh9.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Порядок проведения профилактических медосмотров
-                        детей</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 573.79 КБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li><a href="javascript:;"><span>Защита прав</span></a>
-        <div class="submenu">
-          <div class="container">
-            <div class="close">
-              <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
-                  src="./assets/close_button2-red.svg">
-              </div>
-            </div>
-            <ul>
-              <li class="menu-item tablet">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/a14/a146e328d63d7c200fe977f6074194bf.pdf">
-                  <div class="data"><img class="img-bg" src="./assets/6b2482baae053374a5b35bce3ac7360c.png">
-                    <div class="info data-tablet">
-                      <p class="title">Страховые представители — менеджеры здоровья</p>
-                      <div class="wr">
-                        <p class="pa">Памятка застрахованному лицу:</p>
-                        <p class="desc">В каких случаях нужно обращаться и как связаться с
-                          представителем </p>
-                        <p class="more">СКАЧАТЬ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/agents/your/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Ваш страховой представитель</p>
-                      <div class="wr">
-                        <p class="desc">Всегда рядом с Вами!</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/contact/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Контакт-центр «Капитал МС»</p>
-                      <div class="wr">
-                        <p class="desc">Круглосуточная поддержка</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/rights/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Права и обязанности застрахованных</p>
-                      <div class="wr">
-                        <p class="desc">Гарантированные законом</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/history/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Кейсы работы с застрахованными </p>
-                      <div class="wr">
-                        <p class="desc">Алгоритмы и практика</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/appeal/na-meduchrezhdenie/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Жалоба о нарушении прав пациента</p>
-                      <div class="wr">
-                        <p class="desc">Обращайтесь — поможем!</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/identification/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Выявленные нарушения по обращениям</p>
-                      <div class="wr">
-                        <p class="desc">Статистика по обращениям застрахованных лиц</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item empty"><a>
-                  <div class="data">
-                    <div class="info data-empty">
-                      <p class="title"></p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item empty"><a>
-                  <div class="data">
-                    <div class="info data-empty">
-                      <p class="title"></p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/c97/ko3qehn1cy96mdbv28icwpvrxvjlrbbd.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Программа госгарантий бесплатного оказания медицинской
-                        помощи</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 3.6 МБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/6d4/5629i97zxq57lwuee2m80y0he2nem683.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">Правила обязательного медицинского страхования</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 1.19 МБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li><a href="javascript:;"><span>Система ОМС</span></a>
-        <div class="submenu">
-          <div class="container">
-            <div class="close">
-              <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
-                  src="./assets/close_button2-red.svg">
-              </div>
-            </div>
-            <ul>
-              <li class="menu-item tablet">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/829/829de87be96546514e97dbd2d9d7a660.pdf">
-                  <div class="data"><img class="img-bg" src="./assets/b4c156140926afba7e3a7c91d1c86dad.png">
-                    <div class="info data-tablet">
-                      <p class="title">Бесплатное оказание медицинской помощи</p>
-                      <div class="wr">
-                        <p class="pa">Памятка застрахованному лицу:</p>
-                        <p class="desc">Виды бесплатной медпомощи, предельные сроки
-                          ожидания, куда обращаться за консультацией и жалобой</p>
-                        <p class="more">СКАЧАТЬ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/what/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Что такое система ОМС</p>
-                      <div class="wr">
-                        <p class="desc">Обязательное медицинское страхование</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <!--                        <li class="menu-item standart"><a href="/oms/share/">-->
-              <!--                                <div class="data">-->
-              <!--                                    <div class="info data-standart">-->
-              <!--                                        <p class="title">Деятельность компании в сфере ОМС</p>-->
-              <!--                                        <div class="wr">-->
-              <!--                                            <p class="desc">Доступно. Надежно. Компетентно</p>-->
-              <!--                                        </div>-->
-              <!--                                    </div>-->
-              <!--                                </div>-->
-              <!--                            </a></li>-->
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/digest/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Новости о системе</p>
-                      <div class="wr">
-                        <p class="desc">Дайджест о самом важном</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart">
-                <a href="http://dev.kapmed.ru/oms/org_info/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Информация о медицинских организациях</p>
-                      <div class="wr">
-                        <p class="desc">Региональный справочник и карта</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/help/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Порядок оказания медицинской помощи</p>
-                      <div class="wr">
-                        <p class="desc">Виды, формы и условия</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/docs/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Нормативно-правовая база</p>
-                      <div class="wr">
-                        <p class="desc">Законодательство в сфере ОМС</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/how_attach/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Выбор медицинской организации и врача</p>
-                      <div class="wr">
-                        <p class="desc">Для получения бесплатной медпомощи</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/resources/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Полезные ресурсы</p>
-                      <div class="wr">
-                        <p class="desc">Всё для пациента</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/covid/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Коронавирус COVID-19</p>
-                      <div class="wr">
-                        <p class="desc">COVID-19</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/cef/jhvkxybd34oe7bp12lq7257ld1sxjg60.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">ФЗ «Об обязательном медицинском страховании»</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 1.33 МБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="menu-item file">
-                <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/659/lmufdm1tnu3388qlowarqlip38plgih7.pdf">
-                  <div class="data">
-                    <div class="img-wrap"><img src="./assets/icon-docs.svg">
-                    </div>
-                    <div class="info data-file">
-                      <p class="title">ФЗ «Об основах охраны здоровья граждан в РФ»</p>
-                      <div class="wr">
-                        <p class="desc">pdf. 1.55 МБ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li><a href="javascript:;"><span>О компании</span></a>
-        <div class="submenu">
-          <div class="container">
-            <div class="close">
-              <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
-                  src="./assets/close_button2-red.svg">
-              </div>
-            </div>
-            <ul>
-              <li class="menu-item tablet2"><a href="http://dev.kapmed.ru/about/">
-                  <div class="data"><img class="img-bg" src="./assets/block5.png">
-                    <div class="info data-tablet2">
-                      <p class="title">Застрахованных граждан в «Капитал МС» по состоянию</p>
-                      <div class="wr">
-                        <div class="t">на 01.06.2022</div>
-                        <div class="d"> 22 302 350 чел</div>
-                        <div class="t">на 01.01.2022</div>
-                        <div class="d"> 22 305 861 чел.</div>
-                      </div>
-                      <div class="wr">
-                        <p class="desc"></p>
-                        <p class="more">Подробнее</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">О компании</p>
-                      <div class="wr">
-                        <p class="desc">Капитал Медицинское Страхование</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/thanks/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Благодарности</p>
-                      <div class="wr">
-                        <p class="desc">От застрахованных лиц</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/press/news/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Пресс-центр</p>
-                      <div class="wr">
-                        <p class="desc">Новости, видео и СМИ</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/information/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Раскрытие информации</p>
-                      <div class="wr">
-                        <p class="desc">Документы организации</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/methodical/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Научно-практическая деятельность</p>
-                      <div class="wr">
-                        <p class="desc">Памятки, публикации и презентации</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/projects/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Проекты компании</p>
-                      <div class="wr">
-                        <p class="desc">Лучшие практики</p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/contacts/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Контакты</p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a></li>
-              <li class="menu-item standart">
-                <a href="http://dev.kapmed.ru/about/team/">
-                  <div class="data">
-                    <div class="info data-standart">
-                      <p class="title">Руководство компании</p>
-                      <div class="wr">
-                        <p class="desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="hovered"><a href="http://dev.kapmed.ru/school/"><span>Школа пациента</span></a></li>
-      <li><a class="search" href="http://dev.kapmed.ru/#" onclick="switchSearch()"><i
-            class="ri-search-line"></i><span></span></a></li>
-      <li class="omc-zaiavka">
-        <a class="btn btn-red" href="http://dev.kapmed.ru/zayavka/">
-          <img src="./assets/desktop.svg">
-        </a>
-      </li>
-    </ul>
 
-
-    <ul class="headerMenu mobile">
-
-
-      <li>
-        <a href="javascript:void(0);" class="root-item">
-          <span>Полис ОМС</span>
-          <i class="ri-arrow-down-s-line"></i></a>
-        <div class="submenu">
-          <div class="container">
-            <ul>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/how/">Как выбрать страховую компанию</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/zayavka/">Заявка на полис ОМС</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/delivery/">Доставка полиса ОМС</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/registration/">Порядок оформления полиса
-                  ОМС</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/points/">Пункты выдачи полисов</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/docs/">Документы для оформления полиса</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/entity/">Юридическим лицам</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-elektronnogo-polisa/">Оформление
-                  электронного полиса</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-novorozhdennomu/">Оформление
-                  полиса новорожденному</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-po-doverennosti/">Оформление
-                  полиса по доверенности</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-familii/">Оформление
-                  полиса при смене фамилии</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-mesta-zhitelstva/">Оформление
-                  полиса при смене места жительства</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-v-sluchae-porchi-ili-uteri/">Оформление
-                  полиса в случае порчи или утери</a>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="javascript:void(0);" class="root-item">
-          <span>Система ОМС</span>
-          <i class="ri-arrow-down-s-line"></i></a>
-        <div class="submenu">
-          <div class="container">
-            <ul>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/what/">Что такое система ОМС</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/digest/">Новости о системе ОМС</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/help/">Виды, качество и условия медицинской
-                  помощи</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/how_attach/">Выбор медицинской организации и
-                  врача</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/org_info/">Информация о медицинских
-                  организациях</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/docs/">Нормативно-правовая база</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/resources/">Полезные ресурсы</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/oms/covid/">Коронавирус COVID-19</a>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="javascript:void(0);" class="root-item">
-          <span>Профилактика</span>
-          <i class="ri-arrow-down-s-line"></i></a>
-        <div class="submenu">
-          <div class="container">
-            <ul>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/dispanser/">Диспансеризация взрослых</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/dispanser/detey/">Диспансеризация детей</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/dispanser/about_vaccination/">Вакцинация от
-                  COVID–19</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/dispanser/profilakticheskiy-osmotr/">Профилактический
-                  осмотр</a>
-              </li>
-
-
-              <li>
-                <a data-fancybox="" data-small-btn="false" data-toolbar="false"
-                  href="http://dev.kapmed.ru/#main_page_modal">Диспансеризация лиц, переболевших
-                  COVID-19</a>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="javascript:void(0);" class="root-item">
-          <span>Защита прав</span>
-          <i class="ri-arrow-down-s-line"></i></a>
-        <div class="submenu">
-          <div class="container">
-            <ul>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/agents/your/">Ваш страховой
-                  представитель</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/contact/">Контакт-центр «Капитал МС»</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/rights/">Права и обязанности застрахованных
-                  лиц</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/appeal/na-meduchrezhdenie/">Жалоба о
-                  нарушении прав пациента</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/history/">Кейсы работы с
-                  застрахованными</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/protection/identification/">Выявленные нарушения по
-                  обращениям застрахованных лиц</a>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="javascript:void(0);" class="root-item">
-          <span>О компании</span>
-          <i class="ri-arrow-down-s-line"></i></a>
-        <div class="submenu">
-          <div class="container">
-            <ul>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/">О компании</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/press/news/">Пресс-центр</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/information/">Раскрытие информации</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/methodical/">Научно-практическая
-                  деятельность</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/team/">Руководство компании</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/thanks/">Благодарности</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/projects/">Проекты компании</a>
-              </li>
-
-
-              <li>
-                <a href="http://dev.kapmed.ru/about/contacts/">Контакты</a>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </li>
-
-
-      <li>
-        <a href="http://dev.kapmed.ru/school/" class="root-item">
-          <span>Школа пациента</span>
-        </a>
-      </li>
-
-
-    </ul>
-    <ul class="mobileBottom">
-      <li><a class="YourFil" href="http://dev.kapmed.ru/policy/points/"><i class="ri-map-pin-2-line"></i><span>Офисы и
-            пункты выдачи</span></a></li>
-      <li><a class="PointOffice" href="http://dev.kapmed.ru/filials/11009/"><i class="ri-user-line"></i><span>Ваш
-            филиал</span></a>
-      </li>
-      <li>
-        <div id="app_region_mobile"><a href="javascript:;" class="PointOffice"><span>Смоленская область</span></a>
-          <div id="citySelect_mobile" class="citySelect">
-            <div class="container">
-              <p class="citySelect__title">Выберите ваш регион</p>
-              <div class="citiesBlock mCustomScrollbar _mCS_2 mCS_no_scrollbar _mCS_4">
-                <div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"
-                  style="max-height: none;">
-                  <div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
-                    style="position:relative; top:0; left:0;" dir="ltr">
-                    <div id="mCSB_2" tabindex="0" class="mCustomScrollBox mCS-citiesBlockThm mCSB_vertical mCSB_inside"
-                      style="max-height: none;">
-                      <div id="mCSB_2_container" dir="ltr" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
-                        style="position: relative; top: 0px; left: 0px;">
-                        <div class="cities"></div>
+                      <div class="accordion-f-a-q__item">
+                        <div class="accordion-f-a-q__item-trigger">
+                          <div class="trigger__text">Почему для лечения был назначен конкретный препарат?</div>
+                          <div class="trigger__img">
+                            <span class="trigger__arrow"></span>
+                          </div>
+                        </div>
+                        <div class="accordion-f-a-q__item-content">
+                          <time class="accordion-f-a-q__item-time">Обновлено: 18.09.2020</time>
+                          <div class="accordion-f-a-q__item-text">
+                            <p> Большой список необходимых процедур диагностике часто выглядит для
+                              человека, далёкого от медицины, как прихоть врачей и необходимость «развести» пациента на
+                              большие траты.
+                              Если вы чувствуете подвох, прямо задавайте вопрос.В случае если врач действует в интересах
+                              пациента, он
+                              подробно объяснит, зачем был назначен каждый анализ и УЗИ.А вот если вместо чёткого ответа
+                              пойдут
+                              обтекаемые фразы, есть смысл задуматься о смене врача или медицинского центра.</p>
+                            <p> Пациентам важно понимать, что врачи имеют дело с очень сложной системой – человеческим
+                              организмом.
+                              Поэтому
+                              (особенно в сложных случаях) доктор старается перестраховаться и наверняка убедиться, что
+                              программа
+                              леченияи диагноз определены верно.</p>
+                          </div>
+                          <div class="accordion-f-a-q__item__form accordion-f-a-q-form">
+                            <form class="accordion-f-a-q-form__inner">
+                              <p class="accordion-f-a-q-form__text">
+                                Отзыв был полезен?
+                              </p>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-like3">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-like3">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-like">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M13.1749 4.61051H10.14L10.6383 3.11454C10.7769 2.69968 10.7813 2.25171 10.6508 1.8342C10.5203 1.41668 10.2616 1.05094 9.91141 0.788883L9.25204 0.294569C8.95404 0.0715771 8.5727 -0.00788856 8.21041 0.0774914C7.84824 0.162871 7.54244 0.404291 7.37547 0.736863L6.77716 1.93341C6.1123 3.25795 5.18864 4.43563 4.06064 5.39683C3.7361 4.95666 3.24021 4.67452 2.6959 4.62038C2.1517 4.56614 1.60996 4.74515 1.20504 5.11278C0.800127 5.48052 0.569899 6.00252 0.571442 6.54938V12.0185C0.570549 12.5724 0.806822 13.1001 1.22067 13.4683C1.6345 13.8365 2.18618 14.0097 2.73618 13.9443C3.28618 13.8788 3.78184 13.5809 4.09778 13.1259L5.20001 13.8619C5.29376 13.9244 5.40392 13.9578 5.51653 13.9579H11.5165C11.9597 13.9597 12.393 13.8278 12.76 13.5794C13.127 13.3311 13.4105 12.9779 13.5737 12.5659L15.2308 8.42307C15.3364 8.1618 15.3903 7.88256 15.3897 7.60076V6.82365C15.3891 6.23659 15.1555 5.67376 14.7402 5.25879C14.3249 4.84385 13.762 4.61067 13.1749 4.61047L13.1749 4.61051ZM3.30628 12.0185C3.30628 12.3029 3.15461 12.5656 2.90828 12.7078C2.66208 12.8501 2.35863 12.8501 2.11231 12.7078C1.866 12.5656 1.71431 12.3029 1.71431 12.0185V6.54937C1.71431 6.26499 1.86599 6.00228 2.11231 5.86008C2.35863 5.71789 2.66208 5.71789 2.90828 5.86008C3.1546 6.00227 3.30628 6.265 3.30628 6.54937V12.0185ZM14.2451 7.6008C14.2457 7.73785 14.2197 7.87368 14.1686 8.0008L12.5143 12.1431C12.4353 12.3422 12.2983 12.5128 12.1209 12.6329C11.9436 12.7531 11.7342 12.8169 11.52 12.8162H5.69146L4.44918 11.9876V6.55049C5.85298 5.44323 6.99661 4.04157 7.79946 2.4442L8.40004 1.24823C8.41533 1.21865 8.44278 1.19722 8.47515 1.18952C8.50751 1.18193 8.54166 1.18874 8.56856 1.20827L9.22793 1.70259L9.22804 1.70248C9.38619 1.82111 9.50305 1.98652 9.56199 2.17525C9.62093 2.36398 9.61902 2.56642 9.55663 2.75393L8.80517 5.00025C8.74714 5.17447 8.77638 5.36588 8.88363 5.51488C8.991 5.66376 9.16332 5.75215 9.34692 5.75226H13.1755C13.4592 5.7526 13.7313 5.86543 13.932 6.06609C14.1326 6.26676 14.2455 6.53875 14.2458 6.82258L14.2451 7.6008Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Да
+                                </p>
+                              </label>
+
+                              <label class="accordion-f-a-q-form__label" for="accordion-f-a-q-dislike3">
+                                <input type="radio" name="like" class="accordion-f-a-q-form__input"
+                                  id="accordion-f-a-q-dislike3">
+                                <p class="accordion-f-a-q-form__desc">
+                                  <span class="accordion-f-a-q-form__desc-dislike">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M2.82515 9.38998L5.86 9.38998L5.36169 10.8859C5.22307 11.3008 5.21872 11.7488 5.34919 12.1663C5.47966 12.5838 5.73836 12.9495 6.08859 13.2116L6.74796 13.7059C7.04596 13.9289 7.4273 14.0084 7.78959 13.923C8.15176 13.8376 8.45756 13.5962 8.62453 13.2636L9.22284 12.0671C9.8877 10.7425 10.8114 9.56485 11.9394 8.60365C12.2639 9.04382 12.7598 9.32597 13.3041 9.38011C13.8483 9.43435 14.39 9.25533 14.795 8.88771C15.1999 8.51997 15.4301 7.99797 15.4286 7.45111L15.4286 1.98197C15.4295 1.42805 15.1932 0.900397 14.7793 0.532197C14.3655 0.163997 13.8138 -0.0092031 13.2638 0.056197C12.7138 0.121711 12.2182 0.419596 11.9022 0.874625L10.8 0.138568C10.7062 0.0760675 10.5961 0.0426965 10.4835 0.0425859L4.48347 0.0425854C4.04027 0.0407991 3.60702 0.172718 3.24004 0.421041C2.87296 0.669367 2.58947 1.02261 2.42633 1.43455L0.769188 5.57741C0.663608 5.83868 0.609703 6.11793 0.61026 6.39973L0.61026 7.17684C0.610929 7.7639 0.844522 8.32673 1.2598 8.7417C1.67509 9.15664 2.23803 9.38981 2.82509 9.39001L2.82515 9.38998ZM12.6937 1.98198C12.6937 1.6976 12.8454 1.43489 13.0917 1.29269C13.3379 1.15039 13.6414 1.15039 13.8877 1.29269C14.134 1.43488 14.2857 1.69761 14.2857 1.98198L14.2857 7.45112C14.2857 7.73549 14.134 7.99821 13.8877 8.14041C13.6414 8.28259 13.3379 8.28259 13.0917 8.1404C12.8454 7.99822 12.6937 7.73549 12.6937 7.45112L12.6937 1.98198ZM1.75486 6.39969C1.7543 6.26264 1.7803 6.12681 1.83142 5.99969L3.48565 1.8574C3.56467 1.6583 3.70172 1.48766 3.87908 1.36755C4.05644 1.24743 4.26579 1.18362 4.47997 1.18429L10.3085 1.18429L11.5508 2.01286L11.5508 7.45C10.147 8.55726 9.00339 9.95892 8.20054 11.5563L7.59996 12.7523C7.58467 12.7818 7.55722 12.8033 7.52485 12.811C7.49249 12.8186 7.45834 12.8117 7.43144 12.7922L6.77207 12.2979L6.77196 12.298C6.61381 12.1794 6.49696 12.014 6.43801 11.8252C6.37907 11.6365 6.38098 11.4341 6.44337 11.2466L7.19483 9.00024C7.25286 8.82602 7.22362 8.63461 7.11637 8.48561C7.009 8.33673 6.83668 8.24833 6.65308 8.24822L2.82451 8.24822C2.5408 8.24789 2.26871 8.13505 2.06803 7.93439C1.86736 7.73373 1.75451 7.46174 1.7542 7.17791L1.75486 6.39969Z"
+                                        fill="#4D5759" />
+                                    </svg>
+                                  </span>
+                                  Нет
+                                </p>
+                              </label>
+
+                              <a class="accordion-f-a-q-form__link" href="#">Скачать в PDF</a>
+                            </form>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <form class="search"><input type="text" data-list=".citiesBlock ul" autocomplete="off"
-                  placeholder="Введите название региона"> <input type="submit" value="Найти" class="btn btn-red">
-              </form>
             </div>
           </div>
         </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </div>
+    <div class="container fromHeaderMenu" style="min-height: auto; height: auto;">
+
+      <ul class="headerMenu desktop">
+        <li class="logo2"><a href="http://dev.kapmed.ru/"><img src="./assets/logo2.svg"></a></li>
+        <li><a href="javascript:;"><span>Полис ОМС</span></a>
+          <div class="submenu">
+            <div class="container">
+              <div class="close">
+                <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
+                    src="./assets/close_button2-red.svg">
+                </div>
+              </div>
+              <ul>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/how/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Как выбрать страховую компанию</p>
+                        <p class="desc">Выбор и условия замены СМО</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/points/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Пункты выдачи</p>
+                        <p class="desc">Перечень ближайших отделений и карта</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-polisa-novorozhdennomu/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Полис ОМС ребенку</p>
+                        <p class="desc">Порядок и необходимые документы</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a
+                    href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-familii/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Полис при смене фамилии</p>
+                        <p class="desc">Переоформление</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/zayavka/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Онлайн заявка на оформление</p>
+                        <p class="desc">Заполните онлайн-заявку, для быстрого получения</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/delivery/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Доставка полиса</p>
+                        <p class="desc">Маломобильным гражданам и в офис (от 5 документов)</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-polisa-po-doverennosti/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Оформление полиса через представителя</p>
+                        <p class="desc">Если вы не можете оформить лично</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a
+                    href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-mesta-zhitelstva/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">При смене места жительства</p>
+                        <p class="desc">Переоформление документа</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/registration/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Порядок оформления ОМС</p>
+                        <p class="desc">Пошаговая инструкция</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/entity/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Юридическим лицам</p>
+                        <p class="desc">Выездные семинары для сотрудников</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a
+                    href="http://dev.kapmed.ru/policy/oformlenie-polisa-v-sluchae-porchi-ili-uteri/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Повреждение или утеря полиса</p>
+                        <p class="desc">Выдача дубликата</p>
+                      </div>
+                    </div>
+                  </a></li>
+
+                <li class="menu-item standart">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/c16/c16aa8963fd6d36e2b6aaf4fd2e3c24e.pdf">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Нововведения в период COVID-19</p>
+                        <p class="desc"></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/docs/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Перечень документов</p>
+                        <p class="desc">Что нужно для оформления</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/policy/oformlenie-elektronnogo-polisa/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Электронный полис ОМС</p>
+                        <p class="desc">В виде пластиковой карты с чипом</p>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/ef5/ebeqijz25pjjhgnhq7m9kquvj9693am0.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Форма заявления о выборе (замене) страховой медицинской
+                          организации</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 176.64 КБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/312/312f1e02ee8855a0e13857a0e40106e2.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Форма доверенности (передоверие полномочий от одного
+                          лица другому)</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 61.11 КБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="http://dev.kapmed.ru/#"><span>Профилактика</span></a>
+          <div class="submenu">
+            <div class="container">
+              <div class="close">
+                <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
+                    src="./assets/close_button2-red.svg">
+                </div>
+              </div>
+              <ul>
+                <li class="menu-item tablet menu_dispancer_banner_container">
+                  <a href="http://dev.kapmed.ru/dispanser/medical_examination/">
+                  </a>
+                </li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Диспансеризация взрослых</p>
+                        <div class="wr">
+                          <p class="desc">Здоровье под контролем!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/profilakticheskiy-osmotr/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Профилактический осмотр </p>
+                        <div class="wr">
+                          <p class="desc">Можно проходить ежегодно</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/detey/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Диспансеризация детей</p>
+                        <div class="wr">
+                          <p class="desc">Ранее выявление заболеваний</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/dispanser/about_vaccination/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Вакцинация от COVID–19</p>
+                        <div class="wr">
+                          <p class="desc">Безопасный и эффективный способ защиты</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart">
+                  <a href="http://dev.kapmed.ru/dispanser/medical_examination/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Диспансеризация лиц, переболевших COVID-19</p>
+                        <div class="wr">
+                          <p class="desc">Выявление постковидного синдрома и других
+                            последствий инфекции</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item empty"><a>
+                    <div class="data">
+                      <div class="info data-empty">
+                        <p class="title"></p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item empty"><a>
+                    <div class="data">
+                      <div class="info data-empty">
+                        <p class="title"></p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item empty"><a>
+                    <div class="data">
+                      <div class="info data-empty">
+                        <p class="title"></p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <!--                    <li class="menu-item standart">-->
+                <!--                        <a href="/dispanser/medical_examination/">-->
+                <!--                            <div class="data">-->
+                <!--                                <div class="info data-standart">-->
+                <!--                                    <p class="title">Углубленная диспансеризация по ОМС</p>-->
+                <!--                                    <div class="wr">-->
+                <!--                                        <p class="desc">Расширенная программа диспансеризации</p>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/49a/i54k7aomndz5985ynjnyjdgid6kzuyub.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Порядок проведения профмероприятий взрослого
+                          населения</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 878.86 КБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/ac7/d6xtw9rxp1evap1954gqg55soajd9nh9.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Порядок проведения профилактических медосмотров
+                          детей</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 573.79 КБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;"><span>Защита прав</span></a>
+          <div class="submenu">
+            <div class="container">
+              <div class="close">
+                <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
+                    src="./assets/close_button2-red.svg">
+                </div>
+              </div>
+              <ul>
+                <li class="menu-item tablet">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/a14/a146e328d63d7c200fe977f6074194bf.pdf">
+                    <div class="data"><img class="img-bg" src="./assets/6b2482baae053374a5b35bce3ac7360c.png">
+                      <div class="info data-tablet">
+                        <p class="title">Страховые представители — менеджеры здоровья</p>
+                        <div class="wr">
+                          <p class="pa">Памятка застрахованному лицу:</p>
+                          <p class="desc">В каких случаях нужно обращаться и как связаться с
+                            представителем </p>
+                          <p class="more">СКАЧАТЬ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/agents/your/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Ваш страховой представитель</p>
+                        <div class="wr">
+                          <p class="desc">Всегда рядом с Вами!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/contact/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Контакт-центр «Капитал МС»</p>
+                        <div class="wr">
+                          <p class="desc">Круглосуточная поддержка</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/rights/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Права и обязанности застрахованных</p>
+                        <div class="wr">
+                          <p class="desc">Гарантированные законом</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/history/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Кейсы работы с застрахованными </p>
+                        <div class="wr">
+                          <p class="desc">Алгоритмы и практика</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/appeal/na-meduchrezhdenie/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Жалоба о нарушении прав пациента</p>
+                        <div class="wr">
+                          <p class="desc">Обращайтесь — поможем!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/protection/identification/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Выявленные нарушения по обращениям</p>
+                        <div class="wr">
+                          <p class="desc">Статистика по обращениям застрахованных лиц</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item empty"><a>
+                    <div class="data">
+                      <div class="info data-empty">
+                        <p class="title"></p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item empty"><a>
+                    <div class="data">
+                      <div class="info data-empty">
+                        <p class="title"></p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/c97/ko3qehn1cy96mdbv28icwpvrxvjlrbbd.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Программа госгарантий бесплатного оказания медицинской
+                          помощи</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 3.6 МБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/6d4/5629i97zxq57lwuee2m80y0he2nem683.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">Правила обязательного медицинского страхования</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 1.19 МБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;"><span>Система ОМС</span></a>
+          <div class="submenu">
+            <div class="container">
+              <div class="close">
+                <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
+                    src="./assets/close_button2-red.svg">
+                </div>
+              </div>
+              <ul>
+                <li class="menu-item tablet">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/829/829de87be96546514e97dbd2d9d7a660.pdf">
+                    <div class="data"><img class="img-bg" src="./assets/b4c156140926afba7e3a7c91d1c86dad.png">
+                      <div class="info data-tablet">
+                        <p class="title">Бесплатное оказание медицинской помощи</p>
+                        <div class="wr">
+                          <p class="pa">Памятка застрахованному лицу:</p>
+                          <p class="desc">Виды бесплатной медпомощи, предельные сроки
+                            ожидания, куда обращаться за консультацией и жалобой</p>
+                          <p class="more">СКАЧАТЬ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/what/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Что такое система ОМС</p>
+                        <div class="wr">
+                          <p class="desc">Обязательное медицинское страхование</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <!--                        <li class="menu-item standart"><a href="/oms/share/">-->
+                <!--                                <div class="data">-->
+                <!--                                    <div class="info data-standart">-->
+                <!--                                        <p class="title">Деятельность компании в сфере ОМС</p>-->
+                <!--                                        <div class="wr">-->
+                <!--                                            <p class="desc">Доступно. Надежно. Компетентно</p>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </a></li>-->
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/digest/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Новости о системе</p>
+                        <div class="wr">
+                          <p class="desc">Дайджест о самом важном</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart">
+                  <a href="http://dev.kapmed.ru/oms/org_info/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Информация о медицинских организациях</p>
+                        <div class="wr">
+                          <p class="desc">Региональный справочник и карта</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/help/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Порядок оказания медицинской помощи</p>
+                        <div class="wr">
+                          <p class="desc">Виды, формы и условия</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/docs/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Нормативно-правовая база</p>
+                        <div class="wr">
+                          <p class="desc">Законодательство в сфере ОМС</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/how_attach/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Выбор медицинской организации и врача</p>
+                        <div class="wr">
+                          <p class="desc">Для получения бесплатной медпомощи</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/resources/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Полезные ресурсы</p>
+                        <div class="wr">
+                          <p class="desc">Всё для пациента</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/oms/covid/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Коронавирус COVID-19</p>
+                        <div class="wr">
+                          <p class="desc">COVID-19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/cef/jhvkxybd34oe7bp12lq7257ld1sxjg60.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">ФЗ «Об обязательном медицинском страховании»</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 1.33 МБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item file">
+                  <a target="_blank" href="http://dev.kapmed.ru/upload/iblock/659/lmufdm1tnu3388qlowarqlip38plgih7.pdf">
+                    <div class="data">
+                      <div class="img-wrap"><img src="./assets/icon-docs.svg">
+                      </div>
+                      <div class="info data-file">
+                        <p class="title">ФЗ «Об основах охраны здоровья граждан в РФ»</p>
+                        <div class="wr">
+                          <p class="desc">pdf. 1.55 МБ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;"><span>О компании</span></a>
+          <div class="submenu">
+            <div class="container">
+              <div class="close">
+                <div class="close_button" onclick="menuUnHover()"><span>Закрыть</span><img
+                    src="./assets/close_button2-red.svg">
+                </div>
+              </div>
+              <ul>
+                <li class="menu-item tablet2"><a href="http://dev.kapmed.ru/about/">
+                    <div class="data"><img class="img-bg" src="./assets/block5.png">
+                      <div class="info data-tablet2">
+                        <p class="title">Застрахованных граждан в «Капитал МС» по состоянию</p>
+                        <div class="wr">
+                          <div class="t">на 01.06.2022</div>
+                          <div class="d"> 22 302 350 чел</div>
+                          <div class="t">на 01.01.2022</div>
+                          <div class="d"> 22 305 861 чел.</div>
+                        </div>
+                        <div class="wr">
+                          <p class="desc"></p>
+                          <p class="more">Подробнее</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">О компании</p>
+                        <div class="wr">
+                          <p class="desc">Капитал Медицинское Страхование</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/thanks/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Благодарности</p>
+                        <div class="wr">
+                          <p class="desc">От застрахованных лиц</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/press/news/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Пресс-центр</p>
+                        <div class="wr">
+                          <p class="desc">Новости, видео и СМИ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/information/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Раскрытие информации</p>
+                        <div class="wr">
+                          <p class="desc">Документы организации</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/methodical/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Научно-практическая деятельность</p>
+                        <div class="wr">
+                          <p class="desc">Памятки, публикации и презентации</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/projects/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Проекты компании</p>
+                        <div class="wr">
+                          <p class="desc">Лучшие практики</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart"><a href="http://dev.kapmed.ru/about/contacts/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Контакты</p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="menu-item standart">
+                  <a href="http://dev.kapmed.ru/about/team/">
+                    <div class="data">
+                      <div class="info data-standart">
+                        <p class="title">Руководство компании</p>
+                        <div class="wr">
+                          <p class="desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="hovered"><a href="http://dev.kapmed.ru/school/"><span>Школа пациента</span></a></li>
+        <li><a class="search" href="#" data-search><i class="ri-search-line"></i><span></span></a></li>
+        <li class="omc-zaiavka">
+          <a class="btn btn-red" href="http://dev.kapmed.ru/zayavka/">
+            <img src="./assets/desktop.svg">
+          </a>
+        </li>
+      </ul>
+
+
+      <ul class="headerMenu mobile">
+
+
+        <li>
+          <a href="javascript:void(0);" class="root-item">
+            <span>Полис ОМС</span>
+            <i class="ri-arrow-down-s-line"></i></a>
+          <div class="submenu">
+            <div class="container">
+              <ul>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/how/">Как выбрать страховую компанию</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/zayavka/">Заявка на полис ОМС</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/delivery/">Доставка полиса ОМС</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/registration/">Порядок оформления полиса
+                    ОМС</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/points/">Пункты выдачи полисов</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/docs/">Документы для оформления полиса</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/entity/">Юридическим лицам</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-elektronnogo-polisa/">Оформление
+                    электронного полиса</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-novorozhdennomu/">Оформление
+                    полиса новорожденному</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-po-doverennosti/">Оформление
+                    полиса по доверенности</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-familii/">Оформление
+                    полиса при смене фамилии</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-pri-smene-mesta-zhitelstva/">Оформление
+                    полиса при смене места жительства</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/policy/oformlenie-polisa-v-sluchae-porchi-ili-uteri/">Оформление
+                    полиса в случае порчи или утери</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="root-item">
+            <span>Система ОМС</span>
+            <i class="ri-arrow-down-s-line"></i></a>
+          <div class="submenu">
+            <div class="container">
+              <ul>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/what/">Что такое система ОМС</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/digest/">Новости о системе ОМС</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/help/">Виды, качество и условия медицинской
+                    помощи</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/how_attach/">Выбор медицинской организации и
+                    врача</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/org_info/">Информация о медицинских
+                    организациях</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/docs/">Нормативно-правовая база</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/resources/">Полезные ресурсы</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/oms/covid/">Коронавирус COVID-19</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="root-item">
+            <span>Профилактика</span>
+            <i class="ri-arrow-down-s-line"></i></a>
+          <div class="submenu">
+            <div class="container">
+              <ul>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/dispanser/">Диспансеризация взрослых</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/dispanser/detey/">Диспансеризация детей</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/dispanser/about_vaccination/">Вакцинация от
+                    COVID–19</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/dispanser/profilakticheskiy-osmotr/">Профилактический
+                    осмотр</a>
+                </li>
+
+
+                <li>
+                  <a data-fancybox="" data-small-btn="false" data-toolbar="false"
+                    href="http://dev.kapmed.ru/#main_page_modal">Диспансеризация лиц, переболевших
+                    COVID-19</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="root-item">
+            <span>Защита прав</span>
+            <i class="ri-arrow-down-s-line"></i></a>
+          <div class="submenu">
+            <div class="container">
+              <ul>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/agents/your/">Ваш страховой
+                    представитель</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/contact/">Контакт-центр «Капитал МС»</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/rights/">Права и обязанности застрахованных
+                    лиц</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/appeal/na-meduchrezhdenie/">Жалоба о
+                    нарушении прав пациента</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/history/">Кейсы работы с
+                    застрахованными</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/protection/identification/">Выявленные нарушения по
+                    обращениям застрахованных лиц</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="root-item">
+            <span>О компании</span>
+            <i class="ri-arrow-down-s-line"></i></a>
+          <div class="submenu">
+            <div class="container">
+              <ul>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/">О компании</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/press/news/">Пресс-центр</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/information/">Раскрытие информации</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/methodical/">Научно-практическая
+                    деятельность</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/team/">Руководство компании</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/thanks/">Благодарности</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/projects/">Проекты компании</a>
+                </li>
+
+
+                <li>
+                  <a href="http://dev.kapmed.ru/about/contacts/">Контакты</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+        <li>
+          <a href="http://dev.kapmed.ru/school/" class="root-item">
+            <span>Школа пациента</span>
+          </a>
+        </li>
+
+
+      </ul>
+      <ul class="mobileBottom">
+        <li><a class="YourFil" href="http://dev.kapmed.ru/policy/points/"><i class="ri-map-pin-2-line"></i><span>Офисы и
+              пункты выдачи</span></a></li>
+        <li><a class="PointOffice" href="http://dev.kapmed.ru/filials/11009/"><i class="ri-user-line"></i><span>Ваш
+              филиал</span></a>
+        </li>
+        <li>
+          <div id="app_region_mobile"><a href="javascript:;" class="PointOffice"><span>Смоленская область</span></a>
+            <div id="citySelect_mobile" class="citySelect">
+              <div class="container">
+                <p class="citySelect__title">Выберите ваш регион</p>
+                <div class="citiesBlock mCustomScrollbar _mCS_2 mCS_no_scrollbar _mCS_4">
+                  <div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"
+                    style="max-height: none;">
+                    <div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                      style="position:relative; top:0; left:0;" dir="ltr">
+                      <div id="mCSB_2" tabindex="0"
+                        class="mCustomScrollBox mCS-citiesBlockThm mCSB_vertical mCSB_inside" style="max-height: none;">
+                        <div id="mCSB_2_container" dir="ltr" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                          style="position: relative; top: 0px; left: 0px;">
+                          <div class="cities"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form class="search"><input type="text" data-list=".citiesBlock ul" autocomplete="off"
+                    placeholder="Введите название региона"> <input type="submit" value="Найти" class="btn btn-red">
+                </form>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 </header>
