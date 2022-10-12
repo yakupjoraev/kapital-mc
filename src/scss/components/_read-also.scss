@@ -140,7 +140,7 @@
   // .read-also__slide-descr
 
   &__slide-descr {
-    margin-bottom: 16px;
+    margin-bottom: auto;
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
@@ -166,7 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    min-height: 200px;
     margin-left: -20px;
     margin-right: -20px;
     border-radius: 0 0 16px 16px;
