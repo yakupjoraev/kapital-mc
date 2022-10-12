@@ -7,32 +7,37 @@
   <div class="site-container allContent">
     @include('partials/header.html')
     <main class="main">
-      <div class="breadcrumbs-chapter">
+      <div class="breadcrumbs">
         <div class="container">
-          <ul class="breadcrumbs-chapter__list">
-            <li class="breadcrumbs-chapter__item">
-              <a class="breadcrumbs-chapter__item-link" href="">
-                Главная
+          <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item"
+                href="http://dev.kapmed.ru/">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="0">
               </a>
             </li>
 
-            <li class="breadcrumbs-chapter__item">
-              <a class="breadcrumbs-chapter__item-link" href="">
-                Справочный центр
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="">
+                <span itemprop="name">Справочный центр</span>
+                <meta itemprop="position" content="1">
               </a>
             </li>
 
-            <li class="breadcrumbs-chapter__item">
-              <a class="breadcrumbs-chapter__item-link" href="">
-                Истории помощи в реальных ситуациях
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item"
+                href=""><span itemprop="name">Истории помощи в реальных ситуациях</span>
+                <meta itemprop="position" content="2">
               </a>
             </li>
-            <li class="breadcrumbs-chapter__item">
-              Как мне за 1 день организовали доставку необходимого лекарства и спасли жизнь
+
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem ">
+              <span itemprop="name">
+                Как мне за 1 день организовали доставку необходимого лекарства и спасли жизнь
+              </span>
+              <meta itemprop="position" content="3">
             </li>
           </ul>
         </div>
-
       </div>
 
       @include('partials/help-stories-detal.html')

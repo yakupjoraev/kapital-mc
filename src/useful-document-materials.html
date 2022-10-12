@@ -7,27 +7,31 @@
   <div class="site-container allContent">
     @include('partials/header.html')
     <main class="main">
-      <div class="breadcrumbs-chapter">
+      <div class="breadcrumbs">
         <div class="container">
-          <ul class="breadcrumbs-chapter__list">
-            <li class="breadcrumbs-chapter__item">
-              <a class="breadcrumbs-chapter__item-link" href="">
-                Главная
+          <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item"
+                href="http://dev.kapmed.ru/">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="0">
               </a>
             </li>
 
-            <li class="breadcrumbs-chapter__item">
-              <a class="breadcrumbs-chapter__item-link" href="">
-                Справочный центр
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="">
+                <span itemprop="name">Справочный центр</span>
+                <meta itemprop="position" content="1">
               </a>
             </li>
 
-            <li class="breadcrumbs-chapter__item">
-              Полезные материалы
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem ">
+              <span itemprop="name">
+                Полезные материалы
+              </span>
+              <meta itemprop="position" content="3">
             </li>
           </ul>
         </div>
-
       </div>
 
       @include('partials/help-stories-real-situations-useful-document-materials.html')
