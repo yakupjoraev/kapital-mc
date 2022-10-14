@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -10,11 +11,12 @@ html {
 
 section {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, sans-serif), sans-serif;
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
   line-height: 135%;
@@ -26,12 +28,17 @@ section {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 img {
   height: auto;
   max-width: 100%;
   object-fit: cover;
+}
+
+p {
+  font-family: 'HelveticaNeueCyr', sans-serif;
 }
 
 a {

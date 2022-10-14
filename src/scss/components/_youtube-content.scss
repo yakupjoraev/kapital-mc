@@ -15,6 +15,9 @@
     background-color: #031317;
     opacity: 0.2;
     border-radius: 16px;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
   }
 
   &::before {
@@ -29,12 +32,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
+    user-select: none;
+    pointer-events: none;
   }
 
   &:hover::after,
   &:hover::before {
     content: '';
-    z-index: 3;
   }
 
   // .youtube-content__inner

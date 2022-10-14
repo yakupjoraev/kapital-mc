@@ -12,18 +12,18 @@
 
 .useful-materials__title {
   margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 28px;
-  color: var(--blue-color);
+  // font-weight: 700;
+  // font-size: 28px;
+  // line-height: 28px;
+  // color: var(--blue-color);
 
   @include tablet {
     margin-bottom: 20px;
   }
 
   @include mobile {
-    font-size: 26px;
-    line-height: 135%;
+    // font-size: 26px;
+    // line-height: 135%;
   }
 }
 

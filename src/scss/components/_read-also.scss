@@ -4,6 +4,10 @@
 
   &.see-also {
     background-color: var(--white-color);
+
+    & .read-also__slide {
+      background-color: #F8F8F8;
+    }
   }
 
   @include tablet {
@@ -76,7 +80,7 @@
     background-color: var(--white-color);
 
     @include mobile {
-      width: 318px;
+      width: 318px !important;
     }
   }
 
@@ -91,6 +95,7 @@
 
     @include mobile {
       margin: 0 5px;
+      width: 100% !important;
     }
   }
 
@@ -123,7 +128,7 @@
   // .read-also__slide-text
 
   &__slide-text {
-    padding: 9px 12px;
+    padding: 4px 12px;
     border: 1px solid #E6E6E6;
     border-radius: 32px;
     font-size: 12px;

@@ -10,7 +10,7 @@
     color: #2469BE;
 
     & .see-all__arrow {
-      margin-left: 15px;
+      transform: translateX(4px);
     }
   }
 
@@ -18,7 +18,7 @@
     color: #102E53;
 
     & .see-all__arrow {
-      margin-left: 15px;
+      transform: translateX(4px);
     }
   }
 
@@ -26,7 +26,7 @@
     color: #2469BE;
 
     & .see-all__arrow {
-      margin-left: 15px;
+      transform: translateX(4px);
     }
   }
 
@@ -42,7 +42,7 @@
 .see-all__arrow {
   position: absolute;
   margin-left: 11px;
-  transition: margin-left 0.3s linear;
+  transition: transform 0.3s linear;
 }
 
 .see-all__arrow svg path {

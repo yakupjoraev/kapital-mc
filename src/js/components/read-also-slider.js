@@ -21,7 +21,8 @@ $('.read-also__slider').slick({
       settings: {
         slidesToShow: 1,
         arrows: false,
-        // centerMode: true,
+        centerMode: true,
+        variableWidth: true
       }
     },
   ]

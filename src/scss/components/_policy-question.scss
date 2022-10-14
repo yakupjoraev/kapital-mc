@@ -31,6 +31,7 @@
     }
 
     &.policy-question-active~.policy-question__questions {
+      top: 0;
       height: auto;
       opacity: 1;
       user-select: all;
@@ -74,11 +75,14 @@
 
   &__select-arrow {
     transform: rotate(-180deg);
+    transition: transform 0.2s linear;
   }
 
   // .policy-question__questions
 
   &__questions {
+    position: relative;
+    top: -100px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -88,7 +92,7 @@
     opacity: 0;
     user-select: none;
     pointer-events: none;
-    transition: height 0.1s linear 0.2s, opacity 0.1s linear;
+    transition: height 0.4s linear 0.2s, opacity 0.2s linear, top 0.3s linear;
 
     @include tablet {
       column-gap: 24px;

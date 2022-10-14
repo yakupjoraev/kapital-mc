@@ -1,4 +1,5 @@
 .detal-instructions {
+  scroll-behavior: smooth;
 
   // .detal-instructions__inner
 
@@ -269,8 +270,16 @@
   // .detal-instructions__links-link
 
   &__links-link {
-    display: inline-flex;
+    display: inline;
     margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2469BE;
+  }
+
+  &__links-text {
+    display: inline;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -281,6 +290,7 @@
   // .detal-instructions__links-count
 
   &__links-count {
+    flex: 0 0 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,6 +319,10 @@
 
     @include mobile {
       font-size: 24px;
+    }
+
+    &:not(:first-child) {
+      margin: 32px 0;
     }
   }
 

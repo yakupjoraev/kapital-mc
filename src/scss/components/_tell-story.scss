@@ -107,7 +107,7 @@
     padding: 20px 16px;
     background-color: #F8F8F8;
     border-radius: 4px;
-    border: none;
+    border: 1px solid transparent;
     color: var(--black-color);
 
     &::placeholder {
@@ -120,6 +120,11 @@
 
     &:hover {
       filter: none;
+      border: 1px solid #C8C8C8;
+    }
+
+    &:focus {
+      border: 1px solid #031317;
     }
   }
 
@@ -138,6 +143,7 @@
   // .form-tell-story__middle
 
   &__middle {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -163,6 +169,11 @@
 
     &:hover {
       filter: none;
+      border: 1px solid #C8C8C8;
+    }
+
+    &:focus {
+      border: 1px solid #031317;
     }
   }
 
@@ -268,4 +279,20 @@
     user-select: none;
     cursor: default;
   }
+}
+
+.input-error {
+  border: 1px solid var(--red-color);
+}
+
+.message-error {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 135%;
+  color: var(--red-color);
+}
+
+.clear-input {
+  display: none;
 }
