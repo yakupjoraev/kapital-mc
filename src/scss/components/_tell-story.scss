@@ -82,6 +82,7 @@
   // .form-tell-story__group
 
   &__group {
+    position: relative;
     margin-bottom: 16px;
 
     @include mobile {
@@ -293,6 +294,27 @@
   color: var(--red-color);
 }
 
+.form-tell-story__input.input-error .clear-input svg path {
+  fill: var(--red-color);
+}
+
 .clear-input {
   display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(85%);
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.form-tell-story__input {
+  position: relative;
+}
+
+.form-tell-story__input:valid {
+  &~.clear-input {
+    display: block;
+  }
 }
