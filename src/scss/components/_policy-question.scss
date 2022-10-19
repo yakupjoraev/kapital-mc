@@ -43,7 +43,7 @@
     }
 
     &.policy-question-active .policy-question__select-arrow {
-      transform: rotate(0);
+      transform: rotate(-180deg);
     }
   }
 
@@ -74,7 +74,6 @@
   // .policy-question__select-arrow
 
   &__select-arrow {
-    transform: rotate(-180deg);
     transition: transform 0.2s linear;
   }
 
