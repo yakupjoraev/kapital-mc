@@ -14,6 +14,7 @@
   // .policy-question__select
 
   &__select {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,7 @@
     background-color: #F0F6FC;
     border-radius: 16px;
     cursor: pointer;
+    z-index: 2;
 
 
     @include mobile {
