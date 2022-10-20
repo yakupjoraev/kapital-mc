@@ -7,7 +7,9 @@
 
   // .policy-question__inner
 
-  &__inner {}
+  &__inner {
+    position: relative;
+  }
 
   // .policy-question__select
 
@@ -30,8 +32,7 @@
       margin-bottom: 20px;
     }
 
-    &.policy-question-active~.policy-question__questions {
-      top: 0;
+    &.policy-question-active~.policy-question__dropdown {
       height: auto;
       opacity: 1;
       user-select: all;
@@ -80,18 +81,18 @@
   // .policy-question__questions
 
   &__questions {
-    position: relative;
-    top: -100px;
+    // position: relative;
+    // top: -100px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 25px;
-    height: 0;
-    opacity: 0;
-    user-select: none;
-    pointer-events: none;
-    transition: height 0.4s linear 0.2s, opacity 0.2s linear, top 0.3s linear;
+    // height: 0;
+    // opacity: 0;
+    // user-select: none;
+    // pointer-events: none;
+    // transition: height 0.4s linear 0.2s, opacity 0.2s linear, top 0.3s linear;
 
     @include tablet {
       column-gap: 24px;
@@ -123,5 +124,72 @@
     &:hover {
       color: #2469BE;
     }
+  }
+}
+
+.policy-question {
+
+  // .policy-question__dropdown
+
+  &__dropdown {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+    row-gap: 25px;
+    height: 0;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: height 0.4s linear, opacity 0.2s linear;
+    max-width: 736px;
+    width: 100%;
+    padding: 18px 30px;
+    padding-top: 28px;
+    margin-bottom: 40px;
+    background-color: #F0F6FC;
+    border-radius: 16px;
+    text-align: left;
+
+    @include mobile {
+      padding: 18px 20px;
+    }
+  }
+
+  // .policy-question__dropdown-item
+
+  &__dropdown-item {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--blue-color);
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    cursor: pointer;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .policy-question__dropdown-item--selected
+
+  &__dropdown-item--selected {
+    font-weight: 700;
+    cursor: default;
   }
 }
