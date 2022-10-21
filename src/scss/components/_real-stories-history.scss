@@ -1,0 +1,91 @@
+.real-stories-history {
+  padding: 60px 0;
+  background-color: #F8F8F8;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  & .real-stories__item .real-stories__item-descr {
+    background-color: var(--white-color);
+  }
+
+  & .real-stories {
+    margin-bottom: 40px;
+  }
+
+  // .real-stories-history__top
+
+  &__top {
+    margin-bottom: 30px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  // .real-stories-history__title
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  // .real-stories-history__descr
+
+  &__descr {
+    max-width: 768px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--blue-color);
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .real-stories-history__links
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 16px;
+
+      >* {
+        width: 260px;
+      }
+    }
+  }
+
+  // .real-stories-history__links-link
+
+  &__links-link {
+
+    @include tablet {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  &__links-link--mobile {
+    display: none;
+
+    @include tablet {
+      display: inline-flex;
+    }
+  }
+}
