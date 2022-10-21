@@ -30,7 +30,7 @@
 
 
     @include mobile {
-      padding: 18px 20px;
+      padding: 18px 10px;
       margin-bottom: 20px;
     }
 
@@ -58,7 +58,8 @@
     color: var(--blue-color);
 
     @include mobile {
-      font-size: 18px;
+      font-size: 15px;
+      line-height: 21px;
       -ms-text-overflow: ellipsis;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
@@ -90,6 +91,7 @@
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 25px;
+    margin-bottom: 0;
     // height: 0;
     // opacity: 0;
     // user-select: none;
@@ -100,12 +102,17 @@
       column-gap: 24px;
     }
 
+    @include mobile {
+      row-gap: 15px;
+    }
+
   }
 
   // .policy-question__item
 
   &__item {
     flex: 0 1 31%;
+    margin-bottom: 0;
 
     @include tablet {
       flex: 0 1 47%;
@@ -125,6 +132,10 @@
 
     &:hover {
       color: #2469BE;
+    }
+
+    @include mobile {
+      font-size: 15px;
     }
   }
 }
@@ -154,11 +165,11 @@
     padding-top: 28px;
     margin-bottom: 40px;
     background-color: #F0F6FC;
-    border-radius: 16px;
+    border-radius: 0 0 16px 16px;
     text-align: left;
 
     @include mobile {
-      padding: 18px 20px;
+      padding: 18px 10px;
     }
   }
 
@@ -169,22 +180,23 @@
     font-size: 24px;
     line-height: 33px;
     color: var(--blue-color);
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 1;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    display: -webkit-box;
-    display: box;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
+    // -ms-text-overflow: ellipsis;
+    // -o-text-overflow: ellipsis;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    // -ms-line-clamp: 1;
+    // -webkit-line-clamp: 1;
+    // line-clamp: 1;
+    // display: -webkit-box;
+    // display: box;
+    // word-wrap: break-word;
+    // -webkit-box-orient: vertical;
+    // box-orient: vertical;
     cursor: pointer;
 
     @include mobile {
-      font-size: 18px;
+      font-size: 15px;
+      line-height: 21px;
     }
   }
 
