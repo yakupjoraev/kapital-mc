@@ -38,6 +38,7 @@
     @import "./components/about-project";
     @import "./components/experts-detal";
     @import "./components/real-stories-history";
+    @import "./components/footer";
   }
 
   .site-container.allContent>footer {
@@ -501,4 +502,45 @@
 
   .headerMenu .blue-item span:nth-child(1) {
     margin-right: 12px;
+  }
+
+  .socialLinks__title br {
+    display: block;
+  }
+
+  .footer_print_button .image img {
+    vertical-align: bottom;
+  }
+
+  .links__row__item .partition .info-centr {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 11px;
+    }
+  }
+
+  .links__container .partition a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #4D5759;
+  }
+
+  .links__container .partition> :first-child a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #031317;
+  }
+
+  .info-centr__list {
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (max-width: 980px) {
+    .info-centr__list {
+      margin-bottom: 0;
+    }
   }
