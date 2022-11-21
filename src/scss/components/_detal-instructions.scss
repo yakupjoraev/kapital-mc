@@ -707,6 +707,7 @@
     @include tablet {
       flex: 0 1 100%;
       justify-content: center;
+      margin: 0;
     }
 
     @include mobile {
@@ -719,10 +720,15 @@
 
   &__descr {
     margin-right: 15px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 135%;
     color: var(--black-color);
+
+    @include tablet {
+      width: fit-content;
+    }
 
     @include mobile {
       flex: 0 1 100%;
@@ -736,19 +742,12 @@
   &__socilas-list {
     display: flex;
     align-items: center;
-    column-gap: 10px;
     margin-bottom: 0;
   }
 
   // .detal-instructions-form__socials-item
 
-  &__socials-item {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 0;
-    background-color: var(--red-color);
-    border-radius: 5px;
-  }
+  &__socials-item {}
 
   // .detal-instructions-form__socials-link
 
@@ -841,9 +840,6 @@
   }
 }
 
-
-
-
 .star-rating__inner {
   display: flex;
   flex-direction: row-reverse;
@@ -862,9 +858,23 @@
   fill: #f90;
 }
 
-
-
 .star-rating__inner .star-rating__label:hover svg path,
 .star-rating__inner .star-rating__label:hover~.star-rating__label svg path {
   fill: #f90;
+}
+
+// disabled
+
+.star-rating.star-rating--disabled {
+  user-select: none;
+  pointer-events: none;
+
+  .star-rating__inner .star-rating__input:checked~.star-rating__label svg path {
+    fill: #E6E6E6;
+  }
+
+  .star-rating__inner .star-rating__label:hover svg path,
+  .star-rating__inner .star-rating__label:hover~.star-rating__label svg path {
+    fill: #E6E6E6;
+  }
 }
