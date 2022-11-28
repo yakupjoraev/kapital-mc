@@ -222,6 +222,12 @@
       fill: #2DAE00;
       color: #2DAE00;
     }
+
+    &:hover .accordion-f-a-q-form__desc-dislike svg path,
+    &:hover .accordion-f-a-q-form__desc--dislike {
+      fill: var(--red-color);
+      color: var(--red-color);
+    }
   }
 
   // .accordion-f-a-q-form__input
@@ -231,10 +237,16 @@
     z-index: -1;
     opacity: 0;
 
-    &:checked~.accordion-f-a-q-form__desc svg path,
+    &:checked~.accordion-f-a-q-form__desc .accordion-f-a-q-form__desc-like svg path,
     &:checked~.accordion-f-a-q-form__desc {
       fill: #2DAE00;
       color: #2DAE00;
+    }
+
+    &:checked~.accordion-f-a-q-form__desc .accordion-f-a-q-form__desc-dislike svg path,
+    &:checked~.accordion-f-a-q-form__desc--dislike {
+      fill: var(--red-color);
+      color: var(--red-color);
     }
   }
 
