@@ -104,3 +104,17 @@
 
   }
 }
+
+@media (max-width: (576px)) {
+  .subscribe-health__inner h5 {
+    font-size: 20px;
+  }
+
+  .subscribe-health__inner span {
+    display: block;
+  }
+
+  .subscribe-health__inner span svg {
+    margin-right: 10px;
+  }
+}
