@@ -313,4 +313,54 @@
   }
 }
 
-.questions-answers__more-link {}
+.questions-answers__form-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 0 4px 4px 0;
+}
+
+.questions-answers__form-image {
+  position: static;
+  margin: auto;
+  transform: translateY(0)
+}
+
+.questions-answers__form-input {
+  padding: 20px 100px 15px 20px;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .questions-answers__form-img {
+    width: 60px;
+  }
+
+  .questions-answers__form-input {
+    padding: 20px 60px 15px 20px;
+  }
+}
