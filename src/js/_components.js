@@ -5,3 +5,4 @@ import "./components/topResize";
 import "./components/switch-search";
 import "./components/smooth-scroll";
 import "./components/input-clear";
+import "./components/dropdown-menu";

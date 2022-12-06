@@ -49,18 +49,32 @@
                 </div>
               </div>
 
-              <div class="form-tell-story__group">
+              <div class="form-tell-story__group form-tell-story__group-region js-form-tell-story-region">
                 <label class="form-tell-story__label" for="form-tell-story-address">
                   Регион
                 </label>
-                <input class="form-tell-story__input" value="" type="text" placeholder="Укажите ваш регион"
-                  id="form-tell-story-address" required>
-                <div class="clear-input"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                <div class="form-tell-story__input">
+                  <span>Автоматический выбранный регион</span>
+                </div>
+                <input type="hidden" name="region">
+                <ul class="form-tell-story__dropdown js-dropdown-menu">
+                  <li class="form-tell-story__dropdown-item" id="region1">Регион 1</li>
+                  <li class="form-tell-story__dropdown-item" id="region2">Регион 2</li>
+                  <li class="form-tell-story__dropdown-item" id="region3">Регион 3</li>
+                  <li class="form-tell-story__dropdown-item" id="region4">Регион 4</li>
+                  <li class="form-tell-story__dropdown-item" id="region5">Регион 5</li>
+                  <li class="form-tell-story__dropdown-item" id="region6">Регион 6</li>
+                  <li class="form-tell-story__dropdown-item" id="region7">Регион 7</li>
+                  <li class="form-tell-story__dropdown-item" id="region8">Регион 8</li>
+                </ul>
+                <!-- <input class="form-tell-story__input" value="" type="text" placeholder="Укажите ваш регион"
+                  id="form-tell-story-address" required> -->
+                <!-- <div class="clear-input"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 13L1 1M13 1L1 13" stroke="#031317" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                </div>
+                </div> -->
                 <div class="message-error">
                   Ошибка: Неправильный ввод текста
                 </div>
