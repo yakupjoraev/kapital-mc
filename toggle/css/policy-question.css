@@ -1,0 +1,29 @@
+main.main .policy-question__dropdown {
+  z-index: 2;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+main.main .policy-question__select.policy-question-active~.policy-question__dropdown {
+  user-select: auto;
+  pointer-events: auto;
+}
+
+@media (max-width: 576px) {
+  main.main .policy-question__dropdown {
+    max-height: 150px;
+  }
+}
+
+main.main .policy-question__dropdown::-webkit-scrollbar {
+  width: 5px;
+}
+
+main.main .policy-question__dropdown::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+main.main .policy-question__dropdown::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--red-color);
+}

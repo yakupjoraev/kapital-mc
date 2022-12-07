@@ -1,0 +1,5 @@
+main.main .accordion-f-a-q .accordion-f-a-q__item-text span,
+main.main .accordion-f-a-q .accordion-f-a-q__item-text a {
+  color: var(--black-color) !important;
+  font-size: 18px !important;
+}

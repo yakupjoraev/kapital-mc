@@ -1,0 +1,9 @@
+main.main .youtube-content::after,
+main.main .youtube-content::before {
+  content: '';
+  transition: opacity 0.2s linear;
+}
+
+main.main .youtube-content:hover::after {
+  opacity: 0.4;
+}
