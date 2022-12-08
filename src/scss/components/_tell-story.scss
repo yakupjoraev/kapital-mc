@@ -416,3 +416,9 @@
 .form-tell-story__group-region .form-tell-story__dropdown-item:active {
   background-color: #e2e2e2
 }
+
+.simplebar-scrollbar::before {
+  border-radius: 5px;
+  background: var(--red-color);
+  opacity: 1;
+}
