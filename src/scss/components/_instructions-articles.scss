@@ -151,41 +151,67 @@
 }
 
 .instructions-articles__item-link--green {
-  background: #DDFFE2;
-  border: 1px solid transparent;
+  border: 1px solid #DDFFE2;
   color: var(--black-color)
 }
 
 .instructions-articles__item-link--orange {
-  background: #FFE6DE;
-  border: 1px solid transparent;
+  border: 1px solid #FFE6DE;
   color: var(--black-color)
 }
 
 .instructions-articles__item-link--red {
-  background: #FFD6DB;
-  border: 1px solid transparent;
+  border: 1px solid #FFD6DB;
   color: var(--black-color)
 }
 
 .instructions-articles__item-link--blue {
-  background: #D6ECFF;
-  border: 1px solid transparent;
+  border: 1px solid #D6ECFF;
   color: var(--black-color)
 }
 
 .instructions-articles__item-link--yellow {
-  background: #EDEEB6;
-  border: 1px solid transparent;
+  border: 1px solid #EDEEB6;
   color: var(--black-color)
 }
+
 
 .instructions-articles__item-link--purple {
-  background: #E8D1FF;
-  border: 1px solid transparent;
+  border: 1px solid #E8D1FF;
   color: var(--black-color)
 }
 
+
+
+
+
+
+
 .medical-article__top-text {
+  border: 1px solid #E6E6E6;
   padding: 9px 12px 8px;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--green {
+  border: 1px solid #DDFFE2;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--orange {
+  border: 1px solid #FFE6DE;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--red {
+  border: 1px solid #FFD6DB;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--blue {
+  border: 1px solid #D6ECFF;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--yellow {
+  border: 1px solid #EDEEB6;
+}
+
+.medical-article:hover .medical-article__top-text.instructions-articles__item-link--purple {
+  border: 1px solid #E8D1FF;
 }
