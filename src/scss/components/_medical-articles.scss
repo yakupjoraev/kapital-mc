@@ -146,4 +146,34 @@
   }
 }
 
-.medical-articles__btn-link {}
+
+
+//изменение
+.medical-article__top {
+  flex-direction: row-reverse;
+  padding: 0 25px;
+}
+
+.medical-article__descr {
+  padding: 0 25px;
+  margin-bottom: 10px;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 3;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.medical-article__img {
+  height: auto;
+  margin-bottom: 25px;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
