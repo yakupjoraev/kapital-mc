@@ -149,14 +149,8 @@
 
 
 //изменение
-.medical-article__top {
-  flex-direction: row-reverse;
-  padding: 0 25px;
-}
 
 .medical-article__descr {
-  padding: 0 25px;
-  margin-bottom: 10px;
   -ms-text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -173,7 +167,17 @@
 
 .medical-article__img {
   height: auto;
-  margin-bottom: 25px;
-  border-radius: 16px 16px 0 0;
   overflow: hidden;
+  max-height: 200px;
+  min-height: 200px;
+  width: 100%;
+}
+
+.medical-article__img img {
+  max-height: 200px;
+  min-height: 200px;
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  border-radius: 0 0 16px 16px;
 }

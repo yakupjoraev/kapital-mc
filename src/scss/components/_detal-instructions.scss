@@ -878,3 +878,34 @@
     fill: #E6E6E6;
   }
 }
+
+
+//изменение
+.detal-instructions__top-img {
+  padding: 0;
+}
+
+.detal-instructions__top-img img {
+  object-fit: fill;
+  -o-object-fit: fill;
+  max-width: 400px;
+  width: 100%;
+}
+
+.detal-instructions__top {
+  padding: 40px 50px;
+}
+
+.detal-instructions__top-texts {
+  padding-left: 0;
+}
+
+@media (max-width: 576px) {
+  .detal-instructions__top {
+    padding: 20px;
+  }
+
+  .detal-instructions__top-img img {
+    width: 100%;
+  }
+}

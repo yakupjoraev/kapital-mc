@@ -151,3 +151,51 @@
     opacity: 1;
   }
 }
+
+//изменение
+.useful-materials__content-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.useful-materials__content-item {
+  display: grid;
+  width: 100%;
+}
+
+.useful-materials__content-item.youtube-content {
+  display: grid;
+  grid-column: span 2;
+  justify-content: initial;
+}
+
+.useful-materials__content-item.audio-container {
+  display: grid;
+  grid-column: span 3;
+}
+
+@media (max-width: (1024px)) {
+  .useful-materials__content-item.youtube-content:nth-child(n + 3) {
+    display: none;
+  }
+
+  .useful-materials__content-item.youtube-content {
+    grid-column: span 3;
+  }
+
+  .useful-materials__content-item.audio-container {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: (700px)) {
+
+  .useful-materials__content-item.youtube-content {
+    grid-column: span 6;
+  }
+
+  .useful-materials__content-item.audio-container {
+    grid-column: span 6;
+  }
+}
