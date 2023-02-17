@@ -29,7 +29,7 @@
 
       <!-- input-error добовляется при ошибке, стили готовы. Сообщение об оштбке message-error -->
       <div class="tell-story__form form-tell-story">
-        <form class="form-tell-story__inner" action="#">
+        <form class="form-tell-story__inner" action="#" data-simplebar>
           <div class="form-tell-story__top">
             <div class="form-tell-story__inputs">
               <div class="form-tell-story__group">
@@ -57,7 +57,7 @@
                   <span>Автоматический выбранный регион</span>
                 </div>
                 <input type="hidden" name="region">
-                <ul class="form-tell-story__dropdown js-dropdown-menu" data-simplebar>
+                <ul class="form-tell-story__dropdown js-dropdown-menu">
                   <li class="form-tell-story__dropdown-item" id="region1">Регион 1</li>
                   <li class="form-tell-story__dropdown-item" id="region2">Регион 2</li>
                   <li class="form-tell-story__dropdown-item" id="region3">Регион 3</li>
@@ -67,6 +67,7 @@
                   <li class="form-tell-story__dropdown-item" id="region7">Регион 7</li>
                   <li class="form-tell-story__dropdown-item" id="region8">Регион 8</li>
                 </ul>
+
                 <!-- <input class="form-tell-story__input" value="" type="text" placeholder="Укажите ваш регион"
                   id="form-tell-story-address" required> -->
                 <!-- <div class="clear-input"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"

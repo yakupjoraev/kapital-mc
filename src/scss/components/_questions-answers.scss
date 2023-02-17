@@ -384,6 +384,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-top: 1px solid #E6E6E6;
   box-shadow: 0px 5px 29px rgba(97, 97, 97, 0.22);
   z-index: 3;
+  display: none; //убрать не забудь!!!
 }
 
 .answers-list__item {}
@@ -417,4 +418,55 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .answers-list__link:hover {
   color: var(--red-color);
+}
+
+// изменение по иконкам
+
+.questions-answers__item {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+.questions-answers__item-img {
+  max-width: 50px;
+  min-width: 50px;
+  object-fit: fill;
+}
+
+@media (max-width: 576px) {
+  .questions-answers__item {
+    column-gap: 15px;
+  }
+
+  .questions-answers__item-img {
+    max-width: 44px;
+    min-width: 44px;
+  }
+
+  .questions-answers__item-img svg {
+    max-width: 44px;
+    min-width: 44px;
+  }
+}
+
+//доп изменение
+.questions-answers__item:hover {
+  opacity: 1;
+}
+
+.questions-answers__item:hover .questions-answers__item-link {
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--red-color);
+}
+
+.questions-answers__item:hover .questions-answers__item-img svg path {
+  fill: var(--red-color);
+}
+
+.questions-answers__item-img svg {
+  max-width: 50px;
+  min-width: 50px;
+  object-fit: fill;
 }
